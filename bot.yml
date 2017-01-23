@@ -1,0 +1,23 @@
+tasks:
+  hacker_news:
+    priority: 1
+    rss:
+      url: https://news.ycombinator.com/rss
+      all_entries: no
+      other_fields:
+        - comments
+    accept_all: yes
+    regexp:
+      reject:
+        - \w+ \(YC \w+\) is hiring
+    if:
+      - url == comments:
+          set:
+            news_string: '{{ title }} ─ {{ url }}'
+      - url != comments:
+          set:
+            news_string: '{{ title }} ─ {{ url }} ─ {{ comments }}'
+    exec:
+      allow_background: yes
+      on_output:
+        for_accepted: echo 'irc.redbrick.#hackernews *{{ news_string }}' > /home/creadak/.dakdak/weechat_fifo &

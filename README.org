@@ -1,0 +1,3 @@
+* Hacker News Bot
+
+  A task for [[https://flexget.com][Flexget]] that will check the [[https://news.ycombinator.com][Hacker News]] feed and send new links to a channel on IRC
