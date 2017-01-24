@@ -10,6 +10,7 @@ tasks:
     regexp:
       reject:
         - \w+ \(YC \w+\) is hiring
+        - \w+ \(YC \w+\) hiring
     if:
       - url == comments:
           set:
