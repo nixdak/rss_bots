@@ -9,8 +9,7 @@ tasks:
     accept_all: yes
     regexp:
       reject:
-        - \w+ \(YC \w+\) is hiring
-        - \w+ \(YC \w+\) hiring
+        - \w+ \(YC \w+\)(?:\sis)? hiring
     if:
       - url == comments:
           set:
