@@ -1,0 +1,56 @@
+tasks:
+  answer_me_this:
+    rss:
+      url: https://answermethis.libsyn.com/rss/
+      all_entries: no
+    accept_all: yes
+    exec: echo 'irc.DakDak.#podcasts *New Release: Answer Me This ─ {{ title }} ─ {{ url }}' > '/home/creadak/.weechat/weechat_fifo'
+
+  how_did_this_get_made:
+    rss:
+      url: http://rss.earwolf.com/how-did-this-get-made
+      all_entries: no
+    accept_all: yes
+    exec: echo 'irc.DakDak.#podcasts *New Release: How Did This Get Made ─ {{ title }} ─ {{ url }}' > '/home/creadak/.weechat/weechat_fifo'
+        
+  my_dad_wrote_a_porno:
+    rss:
+      url: http://rss.acast.com/mydadwroteaporno
+      all_entries: no
+    accept_all: yes
+    exec: echo 'irc.DakDak.#podcasts *New Release: Reply All ─ {{ title }} ─ {{ url }}' > '/home/creadak/.weechat/weechat_fifo'
+
+  no_such_thing_as_a_fish:
+    rss:
+      url: https://audioboom.com/channels/2399216.rss
+      all_entries: no
+    accept_all: yes
+    exec: echo 'irc.DakDak.#podcasts *New Release: No Such Thing As A Fish ─ {{ title }} ─ {{ url }}' > '/home/creadak/.weechat/weechat_fifo'
+
+  reply_all:
+    rss:
+      url: http://feeds.gimletmedia.com/hearreplyall
+      all_entries: no
+    accept_all: yes
+    exec: echo 'irc.DakDak.#podcasts *New Release: Reply All ─ {{ title }} ─ {{ url }}' > '/home/creadak/.weechat/weechat_fifo'
+
+  soft_eng_daily:
+    rss:
+      url: http://softwareengineeringdaily.com/feed/podcast/
+      all_entries: no
+    accept_all: yes
+    exec: echo 'irc.DakDak.#podcasts *New Release: Software Engineering Daily ─ {{ title }} ─ {{ url }}' > '/home/creadak/.weechat/weechat_fifo'
+
+  song_exploder:
+    rss:
+      url: http://feed.songexploder.net/SongExploder
+      all_entries: no
+    accept_all: yes
+    exec: echo 'irc.DakDak.#podcasts *New Release: Song Exploder ─ {{ title }} ─ {{ url }}' > '/home/creadak/.weechat/weechat_fifo'
+    
+  the_bugle:
+    rss:
+      url: http://feeds.feedburner.com/thebuglefeed/
+      all_entries: no
+    accept_all: yes
+    exec: echo 'irc.DakDak.#podcasts *New Release: The Bugle ─ {{ title }} ─ {{ url }}' > '/home/creadak/.weechat/weechat_fifo'
