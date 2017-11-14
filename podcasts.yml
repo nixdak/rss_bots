@@ -18,7 +18,7 @@ tasks:
       url: http://rss.acast.com/mydadwroteaporno
       all_entries: no
     accept_all: yes
-    exec: "echo irc.DakDak.#podcasts *New Release: Reply All ─ {{ title }} ─ {{ url }} > /home/creadak/.weechat/weechat_fifo"
+    exec: "echo irc.DakDak.#podcasts *New Release: My Dad Wrote A Porno ─ {{ title }} ─ {{ url }} > /home/creadak/.weechat/weechat_fifo"
 
   no_such_thing_as_a_fish:
     rss:
