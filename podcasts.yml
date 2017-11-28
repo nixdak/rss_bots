@@ -7,6 +7,15 @@ tasks:
     set:
       podcast_string: "irc.DakDak.#podcasts *New Release: Answer Me This ─ {{ title }} ─ {{ url }}"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+    
+  blindboy:
+    rss:
+      url: https://rss.acast.com/blindboy
+      all_entries: no
+    accept_all: yes
+    set:
+      podcast_string: "irc.DakDak.#podcasts *New Release: The Blindboy Podcast ─ {{ title }} ─ {{ url }}"
+    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
   how_did_this_get_made:
     rss:
