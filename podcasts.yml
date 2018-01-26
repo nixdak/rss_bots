@@ -1,4 +1,13 @@
 tasks:
+  99_percent_invisible:
+    rss:
+      url: http://feeds.99percentinvisible.org/99percentinvisible
+      all_entries: no
+    accept_all: yes
+    set:
+      podcast_string: "irc.DakDak.#podcasts *New Release: 99% Invisible ─ {{ title }} ─ {{ url }}"
+    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+
   answer_me_this:
     rss:
       url: https://answermethis.libsyn.com/rss/
