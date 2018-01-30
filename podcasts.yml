@@ -143,6 +143,15 @@ tasks:
       podcast_string: "irc.DakDak.#podcasts *Serial ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
+  shmanners:
+    rss:
+      url: http://shmanners.libsyn.com/rss
+      all_entries: no
+    accept_all: yes
+    set:
+      podcast_string: "irc.DakDak.#podcasts *Shmanners ─ {{ title }} [ {{ url }} ]"
+    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+
   software_engineering_daily:
     rss:
       url: http://softwareengineeringdaily.com/feed/podcast/
