@@ -206,6 +206,15 @@ tasks:
       podcast_string: "irc.DakDak.#podcasts *The Blindboy Podcast ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
+  the_boring_talks:
+    rss:
+      url: https://podcasts.files.bbci.co.uk/p05t3gr2.rss
+      all_entries: no
+    accept_all: yes
+    set:
+      podcast_string: "irc.DakDak.#podcasts *The Boring Talks ─ {{ title }} [ {{ url }} ]"
+    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+
   the_bugle:
     rss:
       url: http://feeds.feedburner.com/thebuglefeed/
