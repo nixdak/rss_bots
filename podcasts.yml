@@ -286,3 +286,12 @@ tasks:
     set:
       podcast_string: "irc.DakDak.#podcasts *This Is Love ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+
+  twenty_thousand_hertz:
+    rss:
+      url: http://feeds.megaphone.fm/20k
+      all_entries: no
+    accept_all: yes
+    set:
+      podcast_string: "irc.DakDak.#podcasts *Twenty Thousand Hertz ─ {{ title }} [ {{ url }} ]"
+    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
