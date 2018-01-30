@@ -62,6 +62,15 @@ tasks:
       podcast_string: "irc.DakDak.#podcasts *Mission To Zyxx ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
+  more_or_less:
+    rss:
+      url: https://podcasts.files.bbci.co.uk/p02nrss1.rss
+      all_entries: no
+    accept_all: yes
+    set:
+      podcast_string: "irc.DakDak.#podcasts *More Or Less ─ {{ title }} [ {{ url }} ]"
+    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+
   my_brother_my_brother_and_me:
     rss:
       url: http://mbmbam.libsyn.com/rss
