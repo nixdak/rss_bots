@@ -250,3 +250,12 @@ tasks:
     set:
       podcast_string: "irc.DakDak.#podcasts *The Mortified Podcast ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+
+  the_skeptics_guide_to_the_universe:
+    rss:
+      url: https://feed.theskepticsguide.org/feed/rss.aspx?feed=sgu
+      all_entries: no
+    accept_all: yes
+    set:
+      podcast_string: "irc.DakDak.#podcasts *The Skeptics Guide to the Universe ─ {{ title }} [ {{ url }} ]"
+    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
