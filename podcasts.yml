@@ -5,7 +5,7 @@ tasks:
       all_entries: no
     accept_all: yes
     set:
-      podcast_string: "irc.DakDak.#podcasts *New Release: 99% Invisible ─ {{ title }} ─ {{ url }}"
+      podcast_string: "irc.DakDak.#podcasts *99% Invisible ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
   answer_me_this:
@@ -14,7 +14,7 @@ tasks:
       all_entries: no
     accept_all: yes
     set:
-      podcast_string: "irc.DakDak.#podcasts *New Release: Answer Me This ─ {{ title }} ─ {{ url }}"
+      podcast_string: "irc.DakDak.#podcasts *Answer Me This ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
   blindboy:
@@ -23,7 +23,7 @@ tasks:
       all_entries: no
     accept_all: yes
     set:
-      podcast_string: "irc.DakDak.#podcasts *New Release: The Blindboy Podcast ─ {{ title }} ─ {{ url }}"
+      podcast_string: "irc.DakDak.#podcasts *The Blindboy Podcast ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
   how_did_this_get_made:
@@ -32,7 +32,7 @@ tasks:
       all_entries: no
     accept_all: yes
     set:
-      podcast_string: "irc.DakDak.#podcasts *New Release: How Did This Get Made ─ {{ title }} ─ {{ url }}"
+      podcast_string: "irc.DakDak.#podcasts *How Did This Get Made ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
   my_dad_wrote_a_porno:
@@ -41,7 +41,7 @@ tasks:
       all_entries: no
     accept_all: yes
     set:
-      podcast_string: "irc.DakDak.#podcasts *New Release: My Dad Wrote A Porno ─ {{ title }} ─ {{ url }}"
+      podcast_string: "irc.DakDak.#podcasts *My Dad Wrote A Porno ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
   no_such_thing_as_a_fish:
@@ -50,7 +50,7 @@ tasks:
       all_entries: no
     accept_all: yes
     set:
-      podcast_string: "irc.DakDak.#podcasts *New Release: No Such Thing As A Fish ─ {{ title }} ─ {{ url }}"
+      podcast_string: "irc.DakDak.#podcasts *No Such Thing As A Fish ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
   reply_all:
@@ -59,7 +59,7 @@ tasks:
       all_entries: no
     accept_all: yes
     set:
-      podcast_string: "irc.DakDak.#podcasts *New Release: Reply All ─ {{ title }} ─ {{ url }}"
+      podcast_string: "irc.DakDak.#podcasts *Reply All ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
   request_for_commits:
@@ -68,7 +68,7 @@ tasks:
       all_entries: no
     accept_all: yes
     set:
-      podcast_string: "irc.DakDak.#podcasts *New Release: Request For Commits ─ {{ title }} ─ {{ url }}"
+      podcast_string: "irc.DakDak.#podcasts *Request For Commits ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
   soft_eng_daily:
@@ -77,7 +77,7 @@ tasks:
       all_entries: no
     accept_all: yes
     set:
-      podcast_string: "irc.DakDak.#podcasts *New Release: Software Engineering Daily ─ {{ title }} ─ {{ url }}"
+      podcast_string: "irc.DakDak.#podcasts *Software Engineering Daily ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
   song_exploder:
@@ -86,7 +86,7 @@ tasks:
       all_entries: no
     accept_all: yes
     set:
-      podcast_string: "irc.DakDak.#podcasts *New Release: Song Exploder ─ {{ title }} ─ {{ url }}"
+      podcast_string: "irc.DakDak.#podcasts *Song Exploder ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
   the_bugle:
@@ -95,5 +95,5 @@ tasks:
       all_entries: no
     accept_all: yes
     set:
-      podcast_string: "irc.DakDak.#podcasts *New Release: The Bugle ─ {{ title }} ─ {{ url }}"
+      podcast_string: "irc.DakDak.#podcasts *The Bugle ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
