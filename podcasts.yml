@@ -28,7 +28,7 @@ tasks:
 
   ear_hustle:
     rss:
-      url: http://feeds.earhustlehq.com/earhustlehq
+      url: http://feeds.earhustlesq.com/earhustlesq
       all_entries: no
     accept_all: yes
     set:
