@@ -17,15 +17,6 @@ tasks:
       podcast_string: "irc.DakDak.#podcasts *Answer Me This ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
-  blindboy:
-    rss:
-      url: https://rss.acast.com/blindboy
-      all_entries: no
-    accept_all: yes
-    set:
-      podcast_string: "irc.DakDak.#podcasts *The Blindboy Podcast ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
-
   how_did_this_get_made:
     rss:
       url: http://rss.earwolf.com/how-did-this-get-made
@@ -71,7 +62,7 @@ tasks:
       podcast_string: "irc.DakDak.#podcasts *Request For Commits ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
-  soft_eng_daily:
+  software_engineering_daily:
     rss:
       url: http://softwareengineeringdaily.com/feed/podcast/
       all_entries: no
@@ -87,6 +78,15 @@ tasks:
     accept_all: yes
     set:
       podcast_string: "irc.DakDak.#podcasts *Song Exploder ─ {{ title }} [ {{ url }} ]"
+    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+
+  the_blindboy_podcast:
+    rss:
+      url: https://rss.acast.com/blindboy
+      all_entries: no
+    accept_all: yes
+    set:
+      podcast_string: "irc.DakDak.#podcasts *The Blindboy Podcast ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
   the_bugle:
