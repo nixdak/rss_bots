@@ -241,3 +241,12 @@ tasks:
     set:
       podcast_string: "irc.DakDak.#podcasts *The Modern Mann ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+
+  the_mortified_podcast:
+    rss:
+      url: https://feeds.getmortified.com/MortifiedPod
+      all_entries: no
+    accept_all: yes
+    set:
+      podcast_string: "irc.DakDak.#podcasts *The Mortified Podcast ─ {{ title }} [ {{ url }} ]"
+    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
