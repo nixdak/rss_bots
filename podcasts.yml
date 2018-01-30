@@ -26,6 +26,15 @@ tasks:
       podcast_string: "irc.DakDak.#podcasts *Criminal ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
 
+  ear_hustle:
+    rss:
+      url: http://feeds.earhustlehq.com/earhustlehq
+      all_entries: no
+    accept_all: yes
+    set:
+      podcast_string: "irc.DakDak.#podcasts *Ear Hustle ─ {{ title }} [ {{ url }} ]"
+    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+
   how_did_this_get_made:
     rss:
       url: http://rss.earwolf.com/how-did-this-get-made
