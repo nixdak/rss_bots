@@ -295,3 +295,12 @@ tasks:
     set:
       podcast_string: "irc.DakDak.#podcasts *Twenty Thousand Hertz ─ {{ title }} [ {{ url }} ]"
     exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+
+  welcome_to_night_vale:
+    rss:
+      url: http://nightvale.libsyn.com/rss
+      all_entries: no
+    accept_all: yes
+    set:
+      podcast_string: "irc.DakDak.#podcasts *Welcome To Night Vale ─ {{ title }} [ {{ url }} ]"
+    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
