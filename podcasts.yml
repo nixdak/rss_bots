@@ -193,7 +193,7 @@ tasks:
     template: podcast
 
   the_west_wing_weekly:
-    rss: http://feeds.feedburner.org/westwingweekly
+    rss: http://feeds.feedburner.com/westwingweekly
     set:
       podcast_name: "The West Wing Weekly"
     template: podcast
