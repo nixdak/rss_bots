@@ -1,324 +1,223 @@
+templates:
+  podcast:
+    only_new: yes
+    accept_all: yes
+    exec: "echo irc.DakDak.#podcasts *{{ podcast_name }} ─ {{ title }} [ {{ url }} ]"
+
 tasks:
   99_percent_invisible:
-    rss:
-      url: http://feeds.99percentinvisible.org/99percentinvisible
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.99percentinvisible.org/99percentinvisible
     set:
-      podcast_string: "irc.DakDak.#podcasts *99% Invisible ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "99% Invisible"
+    template: podcast
 
   answer_me_this:
-    rss:
-      url: https://answermethis.libsyn.com/rss/
-      all_entries: no
-    accept_all: yes
+    rss: https://answermethis.libsyn.com/rss/
     set:
-      podcast_string: "irc.DakDak.#podcasts *Answer Me This ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Answer Me This"
+    template: podcast
 
   criminal:
-    rss:
-      url: http://feeds.thisiscriminal.com/CriminalShow
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.thisiscriminal.com/CriminalShow
     set:
-      podcast_string: "irc.DakDak.#podcasts *Criminal ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Criminal"
+    template: podcast
+
 
   ear_hustle:
-    rss:
-      url: http://feeds.earhustlesq.com/earhustlesq
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.earhustlesq.com/earhustlesq
     set:
-      podcast_string: "irc.DakDak.#podcasts *Ear Hustle ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Ear Hustle"
+    template: podcast
 
   how_did_this_get_made:
-    rss:
-      url: http://rss.earwolf.com/how-did-this-get-made
-      all_entries: no
-    accept_all: yes
+    rss: http://rss.earwolf.com/how-did-this-get-made
     set:
-      podcast_string: "irc.DakDak.#podcasts *How Did This Get Made ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "How Did This Get Made"
+    template: podcast
 
   lore:
-    rss:
-      url: http://lorepodcast.libsyn.com/rss
-      all_entries: no
-    accept_all: yes
+    rss: http://lorepodcast.libsyn.com/rss
     set:
-      podcast_string: "irc.DakDak.#podcasts *Lore ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Lore"
+    template: podcast
 
   mission_to_zyxx:
-    rss:
-      url: https://audioboom.com/channels/4921284.rss
-      all_entries: no
-    accept_all: yes
+    rss: https://audioboom.com/channels/4921284.rss
     set:
-      podcast_string: "irc.DakDak.#podcasts *Mission To Zyxx ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Mission To Zyxx"
+    template: podcast
 
   more_or_less:
-    rss:
-      url: https://podcasts.files.bbci.co.uk/p02nrss1.rss
-      all_entries: no
-    accept_all: yes
+    rss: https://podcasts.files.bbci.co.uk/p02nrss1.rss
     set:
-      podcast_string: "irc.DakDak.#podcasts *More Or Less ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "More Or Less"
+    template: podcast
 
   my_brother_my_brother_and_me:
-    rss:
-      url: http://mbmbam.libsyn.com/rss
-      all_entries: no
-    accept_all: yes
+    rss: http://mbmbam.libsyn.com/rss
     set:
-      podcast_string: "irc.DakDak.#podcasts *My Brother My Brother And Me ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "My Brother My Brother And Me"
+    template: podcast
 
   my_dad_wrote_a_porno:
-    rss:
-      url: http://rss.acast.com/mydadwroteaporno
-      all_entries: no
-    accept_all: yes
+    rss: http://rss.acast.com/mydadwroteaporno
     set:
-      podcast_string: "irc.DakDak.#podcasts *My Dad Wrote A Porno ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "My Dad Wrote A Porno"
+    template: podcast
 
   no_such_thing_as_a_fish:
-    rss:
-      url: https://audioboom.com/channels/2399216.rss
-      all_entries: no
-    accept_all: yes
+    rss: https://audioboom.com/channels/2399216.rss
     set:
-      podcast_string: "irc.DakDak.#podcasts *No Such Thing As A Fish ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast: "No Such Thing As A Fish"
+    template: podcast
 
   reply_all:
-    rss:
-      url: http://feeds.gimletmedia.com/hearreplyall
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.gimletmedia.com/replyall
     set:
-      podcast_string: "irc.DakDak.#podcasts *Reply All ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Reply All"
+    template: podcast
 
   request_for_commits:
-    rss:
-      url: https://changelog.com/rfc/feed
-      all_entries: no
-    accept_all: yes
+    rss: https://changelog.com/rfc/feed
     set:
-      podcast_string: "irc.DakDak.#podcasts *Request For Commits ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Request For Commits"
+    template: podcast
 
   robot_or_not:
-    rss:
-      url: http://feeds.theincomparable.com/robot
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.theincomparable.com/robot
     set:
-      podcast_string: "irc.DakDak.#podcasts *Robot Or Not ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Robot Or Not"
+    template: podcast
 
   sawbones:
-    rss:
-      url: http://sawbones.libsyn.com/rss
-      all_entries: no
-    accept_all: yes
+    rss: http://sawbones.libsyn.com/rss
     set:
-      podcast_string: "irc.DakDak.#podcasts *Sawbones ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Sawbones"
+    template: podcast
 
   serial:
-    rss:
-      url: http://feeds.serialpodcast.org/serialpodcast
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.serialpodcast.org/serialpodcast
     set:
-      podcast_string: "irc.DakDak.#podcasts *Serial ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Serial"
+    template: podcast
 
   shmanners:
-    rss:
-      url: http://shmanners.libsyn.com/rss
-      all_entries: no
-    accept_all: yes
+    rss: http://shmanners.libsyn.com/rss
     set:
-      podcast_string: "irc.DakDak.#podcasts *Shmanners ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Shmanners"
+    template: podcast
 
   showcase_from_radiotopia:
-    rss:
-      url: http://feeds.radiotopia.fm/radiotopia-showcase
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.radiotopia.fm/radiotopia-showcase
     set:
-      podcast_string: "irc.DakDak.#podcasts *Showcase From Radiotopia ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Showcase From Radiotopia"
+    template: podcast
 
   software_engineering_daily:
-    rss:
-      url: http://softwareengineeringdaily.com/feed/podcast/
-      all_entries: no
-    accept_all: yes
+    rss: http://softwareengineeringdaily.com/feed/podcast
     set:
-      podcast_string: "irc.DakDak.#podcasts *Software Engineering Daily ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Software Engineering Daily"
+    template: podcast
 
   song_exploder:
-    rss:
-      url: http://feed.songexploder.net/SongExploder
-      all_entries: no
-    accept_all: yes
+    rss: http://feed.songexploder.net/SongExploder
     set:
-      podcast_string: "irc.DakDak.#podcasts *Song Exploder ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Song Exploder"
+    template: podcast
 
   the_adventure_zone:
-    rss:
-      url: http://adventurezone.libsyn.com/rss
-      all_entries: no
-    accept_all: yes
+    rss: http://adventurezone.libsyn.com/rss
     set:
-      podcast_string: "irc.DakDak.#podcasts *The Adventure Zone ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "The Adventure Zone"
+    template: podcast
 
   the_allusionist:
-    rss:
-      url: http://feeds.theallusionist.org/Allusionist
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.theallusionist.org/Allusionist
     set:
-      podcast_string: "irc.DakDak.#podcasts *The Allusionist ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "The Allusionist"
+    template: podcast
 
   the_blindboy_podcast:
-    rss:
-      url: https://rss.acast.com/blindboy
-      all_entries: no
-    accept_all: yes
+    rss: https://rss.acast.com/blindboy
     set:
-      podcast_string: "irc.DakDak.#podcasts *The Blindboy Podcast ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "The Blindboy Podcast"
+    template: podcast
 
   the_boring_talks:
-    rss:
-      url: https://podcasts.files.bbci.co.uk/p05t3gr2.rss
-      all_entries: no
-    accept_all: yes
+    rss: https://podcasts.files.bbci.co.uk/p05t3gr2.rss
     set:
-      podcast_string: "irc.DakDak.#podcasts *The Boring Talks ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "The Boring Talks"
+    template: podcast
 
   the_bugle:
-    rss:
-      url: http://feeds.feedburner.com/thebuglefeed/
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.feedburner.com/thebuglefeed
     set:
-      podcast_string: "irc.DakDak.#podcasts *The Bugle ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "The Bugle"
+    template: podcast
 
   the_changelog:
-    rss:
-      url: https://changelog.com/podcast/feed
-      all_entries: no
-    accept_all: yes
+    rss: https://changelog.com/podcast/feed
     set:
-      podcast_string: "irc.DakDak.#podcasts *The Changelog ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "The Changelog"
+    template: podcast
 
-  the_curious_cases_of_rutherford_and_fry:
-    rss:
-      url: https://podcasts.files.bbci.co.uk/b07dx75g.rss
-      all_entries: no
-    accept_all: yes
+  the_curious_cases_of_ruterford_and_fry:
+    rss: https://podcasts.files.bbci.co.uk/b07dx75g.rss
     set:
-      podcast_string: "irc.DakDak.#podcasts *The Curious Cases of Rutherford And Fry ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "The Curious Cases of Rutherford And Fry"
+    template: podcast
 
   the_modern_mann:
-    rss:
-      url: http://rss.acast.com/themodernmann
-      all_entries: no
-    accept_all: yes
+    rss: http://rss.acast.com/themodernmann
     set:
-      podcast_string: "irc.DakDak.#podcasts *The Modern Mann ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "The Mordern Mann"
+    template: podcast
 
   the_mortified_podcast:
-    rss:
-      url: https://feeds.getmortified.com/MortifiedPod
-      all_entries: no
-    accept_all: yes
+    rss: https://feeds.getmortified.com/MortifiedPod
     set:
-      podcast_string: "irc.DakDak.#podcasts *The Mortified Podcast ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "The Mortified Podcast"
+    template: podcast
 
   the_skeptics_guide_to_the_universe:
-    rss:
-      url: https://feed.theskepticsguide.org/feed/rss.aspx?feed=sgu
-      all_entries: no
-    accept_all: yes
+    rss: https://feed.theskepticsguide.org/feed/rss.aspx?feed=sgu
     set:
-      podcast_string: "irc.DakDak.#podcasts *The Skeptics Guide to the Universe ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "The Skeptics Guide to the Universe"
+    template: podcast
 
   the_truth:
-    rss:
-      url: http://feeds.thetruthpodcast.com/thetruthapm
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.thetruthpodcast.com/thetruthapm
     set:
-      podcast_string: "irc.DakDak.#podcasts *The Truth ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "The Truth"
+    template: podcast
 
   the_west_wing_weekly:
-    rss:
-      url: http://feeds.feedburner.com/westwingweekly
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.feedburner.org/westwingweekly
     set:
-      podcast_string: "irc.DakDak.#podcasts *The West Wing Weekly ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "The West Wing Weekly"
+    template: podcast
 
   this_is_love:
-    rss:
-      url: http://feeds.thisiscriminal.com/thisislovepodcast
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.thisiscriminal.com/thisislovepodcast
     set:
-      podcast_string: "irc.DakDak.#podcasts *This Is Love ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "This Is Love"
+    template: podcast
 
   twenty_thousand_hertz:
-    rss:
-      url: http://feeds.megaphone.fm/20k
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.megaphone.fm/20k
     set:
-      podcast_string: "irc.DakDak.#podcasts *Twenty Thousand Hertz ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Twenty Thousand Hertz"
+    template: podcast
 
   welcome_to_night_vale:
-    rss:
-      url: http://nightvale.libsyn.com/rss
-      all_entries: no
-    accept_all: yes
+    rss: http://nightvale.libsyn.com/rss
     set:
-      podcast_string: "irc.DakDak.#podcasts *Welcome To Night Vale ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "Welcome To Night Vale"
+    template: podcast
 
   what_trump_can_teach_us_about_con_law:
-    rss:
-      url: http://feeds.trumpconlaw.com/trumpconlaw
-      all_entries: no
-    accept_all: yes
+    rss: http://feeds.trumpconlaw.com/trumpconlaw
     set:
-      podcast_string: "irc.DakDak.#podcasts *What Trump Can Teach Us About Con Law ─ {{ title }} [ {{ url }} ]"
-    exec: echo "{{ podcast_string }}" > /home/creadak/.weechat/weechat_fifo
+      podcast_name: "What Trump Can Teach Us About Con Law"
+    template: podcast
