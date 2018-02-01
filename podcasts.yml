@@ -23,6 +23,11 @@ tasks:
       podcast_name: "Criminal"
     template: podcast
 
+  darknet_diaries:
+    rss: https://darknetdiaries.com/podcast.xml
+    set:
+      podcast_name: "Darknet Diaries"
+    template: podcast
 
   ear_hustle:
     rss: http://feeds.earhustlesq.com/earhustlesq
