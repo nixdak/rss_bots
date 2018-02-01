@@ -180,7 +180,7 @@ tasks:
     template: podcast
 
   the_mortified_podcast:
-    rss: https://feeds.getmortified.com/MortifiedPod
+    rss: http://feeds.getmortified.com/MortifiedPod
     set:
       podcast_name: "The Mortified Podcast"
     template: podcast
