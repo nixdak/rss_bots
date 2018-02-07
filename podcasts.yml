@@ -2,7 +2,10 @@ templates:
   podcast:
     only_new: yes
     accept_all: yes
-    exec: "echo irc.DakDak.#podcasts *{{ podcast_name }} ─ {{ title }} [ {{ url }} ] > /home/creadak/.weechat/weechat_fifo"
+    exec:
+      auto_escape: yes
+      on_output:
+        for_accepted: echo irc.DakDak.#podcasts *"{{ podcast_name }} ─ {{ title }} [ {{ url }} ]" > /home/creadak/.weechat/weechat_fifo
 
 tasks:
   99_percent_invisible:
