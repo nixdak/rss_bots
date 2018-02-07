@@ -20,6 +20,12 @@ tasks:
       podcast_name: "Answer Me This"
     template: podcast
 
+  command_line_heroes:
+    rss: https://feeds.pacific-content.com/commandlineheroes
+    set:
+      podcast_name: "Command Line Heroes"
+    template: podcast
+
   criminal:
     rss: http://feeds.thisiscriminal.com/CriminalShow
     set:
