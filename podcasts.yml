@@ -83,7 +83,7 @@ tasks:
   no_such_thing_as_a_fish:
     rss: https://audioboom.com/channels/2399216.rss
     set:
-      podcast: "No Such Thing As A Fish"
+      podcast_name: "No Such Thing As A Fish"
     template: podcast
 
   reply_all:
