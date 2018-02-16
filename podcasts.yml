@@ -87,7 +87,7 @@ tasks:
     template: podcast
 
   reply_all:
-    rss: http://feeds.gimletmedia.com/replyall
+    rss: http://feeds.gimletmedia.com/hearreplyall
     set:
       podcast_name: "Reply All"
     template: podcast
