@@ -225,7 +225,7 @@ tasks:
     template: podcast
 
   welcome_to_night_vale:
-    rss: http://nightvale.libsyn.com/rss
+    rss: http://feeds.nightvalepresents.com/welcometonightvalepodcast
     set:
       podcast_name: "Welcome To Night Vale"
     template: podcast
