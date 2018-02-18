@@ -1,0 +1,3 @@
+requests>=2.9.1
+jsonschema>=2.6.0
+flexget>=2.12.8

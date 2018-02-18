@@ -1,0 +1,11 @@
+---
+version: 2
+
+machine:
+  python:
+    version: 3.5
+
+test:
+  override:
+    - flexget -c podcasts.yml check
+    - python3 tests.py
