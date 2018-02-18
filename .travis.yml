@@ -4,5 +4,5 @@ python:
   - "3.6"
 
 script:
-  - flexget check
+  - flexget -c podcasts.yml check
   - python tests.py
