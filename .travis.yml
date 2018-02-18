@@ -9,6 +9,8 @@ script:
 
 notifications:
   pushover:
+    on_success: always
+    on_failure: always
     template: "%{repository_slug} %{result} in %{elapsed_time}"
     users:
       secure: Uv7CfwWU4oWGmG9+eNly6LgfYunzm4aQ41roRRWwCJuaQ4TTFLO7ENePcXazsjj6TUeU+6QmTPJqiTTZdPl/WPOQX/zsNZZjWrpaHjo2QrX6ejP+nuQrnCzKdLXiZ0vTf1qR+WR2pUgYiVraVKLs4W9g7lcuGd3+c+RvnbxUhWsBTGyrYcoTrrqzHcgtE94j0uGAsJ+5pSRqYBI/19ZfUOoOr9j8jNBpPIZWY0EBxW6DsO+e9+8AdtDGphwE8sTly61mxj+HqSPdbnfVFwFfY8g6q4hePqTEMVo/rfque4qfu8XzCVu3ct1Qeo7b/CEKTDDiNqb7AazIzQWpdSXCbwb4TZ9VavNbe/YufRX8STTn5HGysYuXMve8LABk2o00L/PYW4PLEDNywSnTkAbXfu4gHujsxO3AT19sL5UUSM0pcxDY/N9zbQoRRN+ttkJ6hx+9djNs7OCvrIBNJxuxnWjWNVgJ0YjmG5f6oQ9rETCMZ+nSiiHB/pUmjQawfDdkv53Sb2B3th0MtJ2X8IU3XXaKaXlekNM0o2iYspMwaIoKZWBjuwWMQtQOHMsR6RZkUg2Qw0dW+sMDaxU4I8Mz0iszqT6bFuIe3cvmGLiL1EN9Q17AQ+miS84OWUwfw0yKeA0CC0gmhlmbycLqe2kNCg1njI+MH4HEp1p61BUHTT8=
