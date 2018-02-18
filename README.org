@@ -1,3 +1,0 @@
-* RSS Bots
-
-  Configurations for [[https://flexget.com][Flexget]] that will check various RSS feeds and send new posts to a channel on IRC
