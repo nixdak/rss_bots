@@ -5,6 +5,7 @@ python:
 
 script:
   - flexget -c podcasts.yml check
+  - flexget -c hacker_news.yml check
   - python tests.py
 
 notifications:
