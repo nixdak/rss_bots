@@ -85,6 +85,13 @@ tasks:
       pcast_url: http://pca.st/zeLn
     template: podcast
 
+  conspiracy_theories:
+    rss: https://rss.art19.com/conspiracy-theories
+    set:
+      podcast_name: "Conspiracy Theories"
+      pcast_url: http://pca.st/OSxO
+    template: podcast
+
   criminal:
     rss: http://feeds.thisiscriminal.com/CriminalShow
     set:
