@@ -148,6 +148,13 @@ tasks:
       pcast_url: http://pca.st/tC9h
     template: podcast
 
+  king_falls_am:
+    rss: https://audioboom.com/channels/4256036.rss
+    set:
+      podcast: "King Falls AM"
+      pcast_url: http://pca.st/q8At
+    template: podcast
+
   lore:
     rss: http://lorepodcast.libsyn.com/rss
     set:
