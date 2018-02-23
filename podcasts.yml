@@ -239,6 +239,13 @@ tasks:
       pcast_url: http://pca.st/robot
     template: podcast
 
+  s_town:
+    rss: http://feeds.stownpodcast.org/stownpodcast
+    set:
+      podcast_name: "S-Town"
+      pcast_url: http://pca.st/s-town
+    template: podcast
+
   sawbones:
     rss: http://sawbones.libsyn.com/rss
     set:
