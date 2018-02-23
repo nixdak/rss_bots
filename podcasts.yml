@@ -103,7 +103,7 @@ tasks:
     rss: https://rss.art19.com/cults
     set:
       podcast_name: "Cults"
-      pcast_url: http:/pca.st/cv5o
+      pcast_url: http://pca.st/cv5o
     template: podcast
 
   the_curious_cases_of_ruterford_and_fry:
