@@ -21,9 +21,14 @@ class TestFlexgetConfig(unittest.TestCase):
                 "set": {
                     "type": "object",
                     "properties": {
-                        "podcast_name": { "type": "string" }
+                        "podcast_name": { "type": "string" },
+                        "pcast_url": {
+                            "type": "string",
+                            "format": "uri",
+                            "pattern": "^(http?)://"
+                        }
                     },
-                    "required": [ "podcast_name" ],
+                    "required": [ "podcast_name", "pcast_url" ],
                     "additional_properties": False
                 },
                 "template": { "enum": [ "podcast" ] }
