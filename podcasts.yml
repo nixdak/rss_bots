@@ -15,6 +15,13 @@ tasks:
       pcast_url: http://pca.st/99invisible
     template: podcast
 
+  a_very_fatal_murder:
+    rss: http://feeds.megaphone.fm/veryfatalmurder
+    set:
+      podcast_name: "A Very Fatal Murder"
+      pcast_url: http://pca.st/veryfatalmurder
+    template: podcast
+
   the_adventure_zone:
     rss: http://adventurezone.libsyn.com/rss
     set:
