@@ -323,11 +323,18 @@ tasks:
       pcast_url: http://pca.st/thetruth
     template: podcast
 
-    twenty_thousand_hertz:
+  twenty_thousand_hertz:
     rss: http://feeds.megaphone.fm/20k
     set:
       podcast_name: "Twenty Thousand Hertz"
       pcast_url: http://pca.st/20khz
+    template: podcast
+
+  unsolved_murders:
+    rss: http://feeds.soundcloud.com/users/soundcloud:users:224506341/sounds.rss
+    set:
+      podcast_name: "Unsolved Murders"
+      pcast_url: http://pca.st/unsolved
     template: podcast
 
   welcome_to_night_vale:
