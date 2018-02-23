@@ -260,6 +260,13 @@ tasks:
       pcast_url: http://pca.st/serial
     template: podcast
 
+  serial_killers:
+    rss: http://feeds.soundcloud.com/users/soundcloud:users:287778748/sounds.rss
+    set:
+      podcast_name: "Serial Killers"
+      pcast_url: http://pca.st/lg6D
+    template: podcast
+
   shmanners:
     rss: http://shmanners.libsyn.com/rss
     set:
