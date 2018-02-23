@@ -141,6 +141,13 @@ tasks:
       pcast_url: http://pca.st/hdtgm
     template: podcast
 
+  it_makes_a_sound:
+    rss: http://itmakesasound.libsyn.com/rss
+    set:
+      podcast_name: "It Makes A Sound"
+      pcast_url: http://pca.st/tC9h
+    template: podcast
+
   lore:
     rss: http://lorepodcast.libsyn.com/rss
     set:
