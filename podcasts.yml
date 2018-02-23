@@ -127,6 +127,13 @@ tasks:
       pcast_url: http://pca.st/5Som
     template: podcast
 
+  haunted_places:
+    rss: https://rss.art19.com/haunted-places
+    set:
+      podcast_name: "Haunted Places"
+      pcast_url: http://pca.st/sZtA
+    template: podcast
+
   how_did_this_get_made:
     rss: http://rss.earwolf.com/how-did-this-get-made
     set:
