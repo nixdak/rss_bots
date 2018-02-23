@@ -357,3 +357,10 @@ tasks:
       podcast_name: "What Trump Can Teach Us About Con Law"
       pcast_url: http://pca.st/nb5c
     template: podcast
+
+  the_white_vault:
+    rss: http://whitevault.libsyn.com/rss
+    set:
+      podcast_name: "The White Vault"
+      pcast_url: http://pca.st/6W9y
+    template: podcast
