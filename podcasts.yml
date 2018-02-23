@@ -364,3 +364,10 @@ tasks:
       podcast_name: "The White Vault"
       pcast_url: http://pca.st/6W9y
     template: podcast
+
+  wonderful:
+    rss: http://rosebuddies.libsyn.com/rss
+    set:
+      podcast_name: "Wonderful!"
+      pcast_url: http://pca.st/wonderful
+    template: podcast
