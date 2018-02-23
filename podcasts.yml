@@ -50,6 +50,13 @@ tasks:
       pcast_url: http://pca.st/answermethis
     template: podcast
 
+  the_archers:
+    rss: https://podcasts.files.bbci.co.uk/b006qpgr.rss
+    set:
+      podcast_name: "The Archers"
+      pcast_url: http://pca.st/XDB4Pv
+    template: podcast
+
   the_blindboy_podcast:
     rss: https://rss.acast.com/blindboy
     set:
