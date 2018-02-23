@@ -29,6 +29,13 @@ tasks:
       pcast_url: http://pca.st/adventurezone
     template: podcast
 
+  alice_isnt_dead:
+    rss: http://feeds.nightvalepresents.com/aliceisntdeadpodcast
+    set:
+      podcast_name: "Alice Isn't Dead"
+      pcast_url: http://pca.st/alice
+    template: podcast
+
   the_allusionist:
     rss: http://feeds.theallusionist.org/Allusionist
     set:
