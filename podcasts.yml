@@ -365,6 +365,13 @@ tasks:
       pcast_url: http://pca.st/6W9y
     template: podcast
 
+  within_the_wires:
+    rss: http://withinthewires.libsyn.com/rss
+    set:
+      podcast_name: "Within the Wires"
+      pcast_url: http://pca.st/withinwires
+    template: podcast
+
   wonderful:
     rss: http://rosebuddies.libsyn.com/rss
     set:
