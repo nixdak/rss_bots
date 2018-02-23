@@ -162,6 +162,13 @@ tasks:
       pcast_url: http://pca.st/lore
     template: podcast
 
+  the_memory_palace:
+    rss: http://feeds.thememorypalace.us/thememorypalace
+    set:
+      podcast_name: "The Memory Palace"
+      pcast_url: http://pca.st/memorypalace
+    template: podcast
+
   mission_to_zyxx:
     rss: https://audioboom.com/channels/4921284.rss
     set:
