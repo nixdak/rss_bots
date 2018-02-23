@@ -99,6 +99,13 @@ tasks:
       pcast_url: http://pca.st/criminal
     template: podcast
 
+  cults:
+    rss: https://rss.art19.com/cults
+    set:
+      podcast_name: "Cults"
+      pcast_url: http:/pca.st/cv5o
+    template: podcast
+
   the_curious_cases_of_ruterford_and_fry:
     rss: https://podcasts.files.bbci.co.uk/b07dx75g.rss
     set:
