@@ -302,6 +302,13 @@ tasks:
       pcast_url: http://pca.st/songexploder
     template: podcast
 
+  tales:
+    rss: https://rss.art19.com/tales
+    set:
+      podcast_name: "Tales"
+      pcast_url: http://pca.st/t86U
+    template: podcast
+
   this_is_love:
     rss: http://feeds.thisiscriminal.com/thisislovepodcast
     set:
