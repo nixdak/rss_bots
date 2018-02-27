@@ -225,6 +225,13 @@ tasks:
       pcast_url: http://pca.st/nosuchthing
     template: podcast
 
+  playing_for_fun:
+    rss: https://www.relay.fm/playingforfun/feed
+    set:
+      podcast_name: "Playing For Fun"
+      pcast_url: http://pca.st/playingforfun
+    template: podcast
+
   reply_all:
     rss: http://feeds.gimletmedia.com/hearreplyall
     set:
