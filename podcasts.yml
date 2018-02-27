@@ -148,6 +148,13 @@ tasks:
       pcast_url: http://pca.st/hdtgm
     template: podcast
 
+  the_infinite_monkey_cage:
+    rss: https://podcasts.files.bbci.co.uk/b00snr0w.rss
+    set:
+      podcast_name: "The Infinite Monkey Cage"
+      pcast_url: http://pca.st/infinitemonkey
+    template: podcast
+
   it_makes_a_sound:
     rss: http://itmakesasound.libsyn.com/rss
     set:
