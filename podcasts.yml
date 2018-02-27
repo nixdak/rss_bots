@@ -64,6 +64,13 @@ tasks:
       pcast_url: http://pca.st/tP9E
     template: podcast
 
+  the_boring_talks:
+    rss: https://podcasts.files.bbci.co.uk/p05t3gr2.rss
+    set:
+      podcast_name: "The Boring Talks"
+      pcast_url: http://pca.st/boringtalks
+    template: podcast
+
   the_bugle:
     rss: http://feeds.feedburner.com/thebuglefeed
     set:
