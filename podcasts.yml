@@ -288,6 +288,13 @@ tasks:
       pcast_url: http://pca.st/sawbones
     template: podcast
 
+  security_now:
+    rss: http://feeds.twit.tv/sn.xml
+    set:
+      podcast_name: "Security Now"
+      pcast_url: http://pca.st/securitynow
+    template: podcast
+
   serial:
     rss: http://feeds.serialpodcast.org/serialpodcast
     set:
