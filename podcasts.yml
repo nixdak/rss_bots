@@ -85,6 +85,13 @@ tasks:
       pcast_url: http://pca.st/changelog
     template: podcast
 
+  coding_blocks:
+    rss: http://feeds.podtrac.com/tBPkjrcL0_m0
+    set:
+      podcast_name: "Coding Blocks"
+      pcast_url: http://pca.st/codingblocks
+    template: podcast
+
   command_line_heroes:
     rss: https://feeds.pacific-content.com/commandlineheroes
     set:
