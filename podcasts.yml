@@ -330,6 +330,13 @@ tasks:
       pcast_url: http://pca.st/songexploder
     template: podcast
 
+  stuff_you_should_know:
+    rss: https://www.howstuffworks.com/podcasts/stuff-you-should-know.rss
+    set:
+      podcast_name: "Stuff You Should Know"
+      pcast_url: http://pca.st/sysk
+    template: podcast
+
   tales:
     rss: https://rss.art19.com/tales
     set:
