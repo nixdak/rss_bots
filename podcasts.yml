@@ -134,6 +134,13 @@ tasks:
       pcast_url: http://pca.st/5Som
     template: podcast
 
+  floss_weekly:
+    rss: http://feeds.twit.tv/floss.xml
+    set:
+      podcast_name: "Floss Weekly"
+      pcast_url: http://pca.st/8ICD
+    template: podcast
+
   haunted_places:
     rss: https://rss.art19.com/haunted-places
     set:
