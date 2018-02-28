@@ -358,6 +358,13 @@ tasks:
       pcast_url: http://pca.st/t86U
     template: podcast
 
+  techs_message:
+    rss: http://rss.acast.com/techsmessage
+    set:
+      podcast_name: "Tech's Message"
+      pcast_url: http://pca.st/3h77
+    template: podcast
+
   this_is_love:
     rss: http://feeds.thisiscriminal.com/thisislovepodcast
     set:
