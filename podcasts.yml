@@ -330,13 +330,6 @@ tasks:
       pcast_url: http://pca.st/skepticsguide
     template: podcast
 
-  this_american_life:
-    rss: http://feed.thisamericanlife.org/talpodcast
-    set:
-      podcast_name: "This American Life"
-      pcast_url: http://pca.st/americanlife
-    template: podcast
-
   software_engineering_daily:
     rss: http://softwareengineeringdaily.com/feed/podcast
     set:
@@ -370,6 +363,13 @@ tasks:
     set:
       podcast_name: "Tech's Message"
       pcast_url: http://pca.st/3h77
+    template: podcast
+
+  this_american_life:
+    rss: http://feed.thisamericanlife.org/talpodcast
+    set:
+      podcast_name: "This American Life"
+      pcast_url: http://pca.st/americanlife
     template: podcast
 
   this_is_love:
