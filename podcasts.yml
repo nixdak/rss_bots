@@ -393,6 +393,13 @@ tasks:
       pcast_url: http://pca.st/6W9y
     template: podcast
 
+  wired_uk:
+    rss: http://www.wired.co.uk/rss/podcast/wired-podcast
+    set:
+      podcast_name: "Wired UK"
+      pcast_url: http://pca.st/wiredcouk
+    template: podcast
+
   within_the_wires:
     rss: http://withinthewires.libsyn.com/rss
     set:
