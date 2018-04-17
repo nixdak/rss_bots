@@ -21,3 +21,18 @@ tasks:
       allow_background: yes
       on_output:
         for_accepted: echo 'irc.DakDak.#hackernews *{{ news_string }}' > /home/creadak/.weechat/weechat_fifo &
+
+  n_gate:
+    rss:
+      url: http://n-gate.com/hackernews/index.rss
+      all_entries: no
+    accept_all: yes
+    age:
+      field: rss_pubdate
+      age: 7 days
+      action: reject
+    exec:
+      allow_background: yes
+      auto_escape: yes
+      on_output:
+        for_accepted: echo 'irc.DakDak.#hackernews */topic N-Gate Digest ('`date --date="{{ rss_pubdate }}" +"%a %B %d"`') - {{ url }}' > /home/creadak/.weechat/weechat_fifo &
