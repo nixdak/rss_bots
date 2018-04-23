@@ -26,6 +26,9 @@ tasks:
     rss:
       url: http://n-gate.com/hackernews/index.rss
       all_entries: no
+    seen:
+      fields:
+        - url
     accept_all: yes
     age:
       field: rss_pubdate
