@@ -2,6 +2,10 @@ templates:
   podcast:
     only_new: yes
     accept_all: yes
+    age:
+      field: rss_pubdate
+      age: 7 days
+      action: reject
     exec:
       auto_escape: yes
       on_output:
