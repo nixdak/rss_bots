@@ -142,7 +142,7 @@ tasks:
     rss: http://feeds.harvardbusiness.org/harvardbusiness/dear-hbr
     set:
       podcast_name: "Dear HBR"
-      pcast_url: http://pca.st/dearhbr
+      pcast_url: https://pca.st/dearhbr
     template: podcast
 
   ear_hustle:
