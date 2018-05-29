@@ -25,7 +25,7 @@ class TestFlexgetConfig(unittest.TestCase):
                         "pcast_url": {
                             "type": "string",
                             "format": "uri",
-                            "pattern": "^(http?)://"
+                            "pattern": "^(https)://"
                         }
                     },
                     "required": [ "podcast_name", "pcast_url" ],

@@ -16,126 +16,126 @@ tasks:
     rss: http://feeds.99percentinvisible.org/99percentinvisible
     set:
       podcast_name: "99% Invisible"
-      pcast_url: http://pca.st/99invisible
+      pcast_url: https://pca.st/99invisible
     template: podcast
 
   a_very_fatal_murder:
     rss: http://feeds.megaphone.fm/veryfatalmurder
     set:
       podcast_name: "A Very Fatal Murder"
-      pcast_url: http://pca.st/veryfatalmurder
+      pcast_url: https://pca.st/veryfatalmurder
     template: podcast
 
   the_adventure_zone:
     rss: http://adventurezone.libsyn.com/rss
     set:
       podcast_name: "The Adventure Zone"
-      pcast_url: http://pca.st/adventurezone
+      pcast_url: https://pca.st/adventurezone
     template: podcast
 
   alice_isnt_dead:
     rss: http://feeds.nightvalepresents.com/aliceisntdeadpodcast
     set:
       podcast_name: "Alice Isn't Dead"
-      pcast_url: http://pca.st/alice
+      pcast_url: https://pca.st/alice
     template: podcast
 
   the_allusionist:
     rss: http://feeds.theallusionist.org/Allusionist
     set:
       podcast_name: "The Allusionist"
-      pcast_url: http://pca.st/allusionist
+      pcast_url: https://pca.st/allusionist
     template: podcast
 
   answer_me_this:
     rss: https://answermethis.libsyn.com/rss/
     set:
       podcast_name: "Answer Me This"
-      pcast_url: http://pca.st/answermethis
+      pcast_url: https://pca.st/answermethis
     template: podcast
 
   the_archers:
     rss: https://podcasts.files.bbci.co.uk/b006qpgr.rss
     set:
       podcast_name: "The Archers"
-      pcast_url: http://pca.st/XDB4Pv
+      pcast_url: https://pca.st/XDB4Pv
     template: podcast
 
   the_blindboy_podcast:
     rss: https://rss.acast.com/blindboy
     set:
       podcast_name: "The Blindboy Podcast"
-      pcast_url: http://pca.st/tP9E
+      pcast_url: https://pca.st/tP9E
     template: podcast
 
   the_boring_talks:
     rss: https://podcasts.files.bbci.co.uk/p05t3gr2.rss
     set:
       podcast_name: "The Boring Talks"
-      pcast_url: http://pca.st/boringtalks
+      pcast_url: https://pca.st/boringtalks
     template: podcast
 
   the_bugle:
     rss: http://feeds.feedburner.com/thebuglefeed
     set:
       podcast_name: "The Bugle"
-      pcast_url: http://pca.st/bugle
+      pcast_url: https://pca.st/bugle
     template: podcast
 
   the_changelog:
     rss: https://changelog.com/podcast/feed
     set:
       podcast_name: "The Changelog"
-      pcast_url: http://pca.st/changelog
+      pcast_url: https://pca.st/changelog
     template: podcast
 
   coding_blocks:
     rss: http://feeds.podtrac.com/tBPkjrcL0_m0
     set:
       podcast_name: "Coding Blocks"
-      pcast_url: http://pca.st/codingblocks
+      pcast_url: https://pca.st/codingblocks
     template: podcast
 
   command_line_heroes:
     rss: https://feeds.pacific-content.com/commandlineheroes
     set:
       podcast_name: "Command Line Heroes"
-      pcast_url: http://pca.st/zeLn
+      pcast_url: https://pca.st/zeLn
     template: podcast
 
   conspiracy_theories:
     rss: https://rss.art19.com/conspiracy-theories
     set:
       podcast_name: "Conspiracy Theories"
-      pcast_url: http://pca.st/OSxO
+      pcast_url: https://pca.st/OSxO
     template: podcast
 
   criminal:
     rss: http://feeds.thisiscriminal.com/CriminalShow
     set:
       podcast_name: "Criminal"
-      pcast_url: http://pca.st/criminal
+      pcast_url: https://pca.st/criminal
     template: podcast
 
   cults:
     rss: https://rss.art19.com/cults
     set:
       podcast_name: "Cults"
-      pcast_url: http://pca.st/cv5o
+      pcast_url: https://pca.st/cv5o
     template: podcast
 
   the_curious_cases_of_ruterford_and_fry:
     rss: https://podcasts.files.bbci.co.uk/b07dx75g.rss
     set:
       podcast_name: "The Curious Cases of Rutherford And Fry"
-      pcast_url: http://pca.st/vT1k
+      pcast_url: https://pca.st/vT1k
     template: podcast
 
   darknet_diaries:
     rss: https://darknetdiaries.com/podcast.xml
     set:
       podcast_name: "Darknet Diaries"
-      pcast_url: http://pca.st/OJYc
+      pcast_url: https://pca.st/OJYc
     template: podcast
 
   dear_hbr:
@@ -149,313 +149,313 @@ tasks:
     rss: http://feeds.earhustlesq.com/earhustlesq
     set:
       podcast_name: "Ear Hustle"
-      pcast_url: http://pca.st/5Som
+      pcast_url: https://pca.st/5Som
     template: podcast
 
   floss_weekly:
     rss: http://feeds.twit.tv/floss.xml
     set:
       podcast_name: "Floss Weekly"
-      pcast_url: http://pca.st/8ICD
+      pcast_url: https://pca.st/8ICD
     template: podcast
 
   haunted_places:
     rss: https://rss.art19.com/haunted-places
     set:
       podcast_name: "Haunted Places"
-      pcast_url: http://pca.st/sZtA
+      pcast_url: https://pca.st/sZtA
     template: podcast
 
   how_did_this_get_made:
     rss: http://rss.earwolf.com/how-did-this-get-made
     set:
       podcast_name: "How Did This Get Made"
-      pcast_url: http://pca.st/hdtgm
+      pcast_url: https://pca.st/hdtgm
     template: podcast
 
   the_infinite_monkey_cage:
     rss: https://podcasts.files.bbci.co.uk/b00snr0w.rss
     set:
       podcast_name: "The Infinite Monkey Cage"
-      pcast_url: http://pca.st/infinitemonkey
+      pcast_url: https://pca.st/infinitemonkey
     template: podcast
 
   it_makes_a_sound:
     rss: http://itmakesasound.libsyn.com/rss
     set:
       podcast_name: "It Makes A Sound"
-      pcast_url: http://pca.st/tC9h
+      pcast_url: https://pca.st/tC9h
     template: podcast
 
   king_falls_am:
     rss: https://audioboom.com/channels/4256036.rss
     set:
       podcast_name: "King Falls AM"
-      pcast_url: http://pca.st/q8At
+      pcast_url: https://pca.st/q8At
     template: podcast
 
   lore:
     rss: http://lorepodcast.libsyn.com/rss
     set:
       podcast_name: "Lore"
-      pcast_url: http://pca.st/lore
+      pcast_url: https://pca.st/lore
     template: podcast
 
   the_memory_palace:
     rss: http://feeds.thememorypalace.us/thememorypalace
     set:
       podcast_name: "The Memory Palace"
-      pcast_url: http://pca.st/memorypalace
+      pcast_url: https://pca.st/memorypalace
     template: podcast
 
   mission_to_zyxx:
     rss: https://audioboom.com/channels/4921284.rss
     set:
       podcast_name: "Mission To Zyxx"
-      pcast_url: http://pca.st/iHi8
+      pcast_url: https://pca.st/iHi8
     template: podcast
 
   the_modern_mann:
     rss: http://rss.acast.com/themodernmann
     set:
       podcast_name: "The Mordern Mann"
-      pcast_url: http://pca.st/mann
+      pcast_url: https://pca.st/mann
     template: podcast
 
   more_or_less:
     rss: https://podcasts.files.bbci.co.uk/p02nrss1.rss
     set:
       podcast_name: "More Or Less"
-      pcast_url: http://pca.st/moreorless
+      pcast_url: https://pca.st/moreorless
     template: podcast
 
   the_mortified_podcast:
     rss: http://feeds.getmortified.com/MortifiedPod
     set:
       podcast_name: "The Mortified Podcast"
-      pcast_url: http://pca.st/mortified
+      pcast_url: https://pca.st/mortified
     template: podcast
 
   my_brother_my_brother_and_me:
     rss: http://mbmbam.libsyn.com/rss
     set:
       podcast_name: "My Brother My Brother And Me"
-      pcast_url: http://pca.st/mybrother
+      pcast_url: https://pca.st/mybrother
     template: podcast
 
   my_dad_wrote_a_porno:
     rss: http://rss.acast.com/mydadwroteaporno
     set:
       podcast_name: "My Dad Wrote A Porno"
-      pcast_url: http://pca.st/mydad
+      pcast_url: https://pca.st/mydad
     template: podcast
 
   no_such_thing_as_a_fish:
     rss: https://audioboom.com/channels/2399216.rss
     set:
       podcast_name: "No Such Thing As A Fish"
-      pcast_url: http://pca.st/nosuchthing
+      pcast_url: https://pca.st/nosuchthing
     template: podcast
 
   playing_for_fun:
     rss: https://www.relay.fm/playingforfun/feed
     set:
       podcast_name: "Playing For Fun"
-      pcast_url: http://pca.st/playingforfun
+      pcast_url: https://pca.st/playingforfun
     template: podcast
 
   reply_all:
     rss: http://feeds.gimletmedia.com/hearreplyall
     set:
       podcast_name: "Reply All"
-      pcast_url: http://pca.st/replyall
+      pcast_url: https://pca.st/replyall
     template: podcast
 
   request_for_commits:
     rss: https://changelog.com/rfc/feed
     set:
       podcast_name: "Request For Commits"
-      pcast_url: http://pca.st/rfc
+      pcast_url: https://pca.st/rfc
     template: podcast
 
   robot_or_not:
     rss: http://feeds.theincomparable.com/robot
     set:
       podcast_name: "Robot Or Not"
-      pcast_url: http://pca.st/robot
+      pcast_url: https://pca.st/robot
     template: podcast
 
   s_town:
     rss: http://feeds.stownpodcast.org/stownpodcast
     set:
       podcast_name: "S-Town"
-      pcast_url: http://pca.st/s-town
+      pcast_url: https://pca.st/s-town
     template: podcast
 
   sawbones:
     rss: http://sawbones.libsyn.com/rss
     set:
       podcast_name: "Sawbones"
-      pcast_url: http://pca.st/sawbones
+      pcast_url: https://pca.st/sawbones
     template: podcast
 
   security_now:
     rss: http://feeds.twit.tv/sn.xml
     set:
       podcast_name: "Security Now"
-      pcast_url: http://pca.st/securitynow
+      pcast_url: https://pca.st/securitynow
     template: podcast
 
   serial:
     rss: http://feeds.serialpodcast.org/serialpodcast
     set:
       podcast_name: "Serial"
-      pcast_url: http://pca.st/serial
+      pcast_url: https://pca.st/serial
     template: podcast
 
   serial_killers:
     rss: http://feeds.soundcloud.com/users/soundcloud:users:287778748/sounds.rss
     set:
       podcast_name: "Serial Killers"
-      pcast_url: http://pca.st/lg6D
+      pcast_url: https://pca.st/lg6D
     template: podcast
 
   shmanners:
     rss: http://shmanners.libsyn.com/rss
     set:
       podcast_name: "Shmanners"
-      pcast_url: http://pca.st/shmanners
+      pcast_url: https://pca.st/shmanners
     template: podcast
 
   showcase_from_radiotopia:
     rss: http://feeds.radiotopia.fm/radiotopia-showcase
     set:
       podcast_name: "Showcase From Radiotopia"
-      pcast_url: http://pca.st/s1Rs
+      pcast_url: https://pca.st/s1Rs
     template: podcast
 
   the_skeptics_guide_to_the_universe:
     rss: https://feed.theskepticsguide.org/feed/rss.aspx?feed=sgu
     set:
       podcast_name: "The Skeptics Guide to the Universe"
-      pcast_url: http://pca.st/skepticsguide
+      pcast_url: https://pca.st/skepticsguide
     template: podcast
 
   software_engineering_daily:
     rss: http://softwareengineeringdaily.com/feed/podcast
     set:
       podcast_name: "Software Engineering Daily"
-      pcast_url: http://pca.st/sed
+      pcast_url: https://pca.st/sed
     template: podcast
 
   song_exploder:
     rss: http://feed.songexploder.net/SongExploder
     set:
       podcast_name: "Song Exploder"
-      pcast_url: http://pca.st/songexploder
+      pcast_url: https://pca.st/songexploder
     template: podcast
 
   stuff_you_should_know:
     rss: https://www.howstuffworks.com/podcasts/stuff-you-should-know.rss
     set:
       podcast_name: "Stuff You Should Know"
-      pcast_url: http://pca.st/sysk
+      pcast_url: https://pca.st/sysk
     template: podcast
 
   tales:
     rss: https://rss.art19.com/tales
     set:
       podcast_name: "Tales"
-      pcast_url: http://pca.st/t86U
+      pcast_url: https://pca.st/t86U
     template: podcast
 
   techs_message:
     rss: http://rss.acast.com/techsmessage
     set:
       podcast_name: "Tech's Message"
-      pcast_url: http://pca.st/3h77
+      pcast_url: https://pca.st/3h77
     template: podcast
 
   this_american_life:
     rss: http://feed.thisamericanlife.org/talpodcast
     set:
       podcast_name: "This American Life"
-      pcast_url: http://pca.st/americanlife
+      pcast_url: https://pca.st/americanlife
     template: podcast
 
   this_is_love:
     rss: http://feeds.thisiscriminal.com/thisislovepodcast
     set:
       podcast_name: "This Is Love"
-      pcast_url: http://pca.st/thisislove
+      pcast_url: https://pca.st/thisislove
     template: podcast
 
   the_truth:
     rss: http://feeds.thetruthpodcast.com/thetruthapm
     set:
       podcast_name: "The Truth"
-      pcast_url: http://pca.st/thetruth
+      pcast_url: https://pca.st/thetruth
     template: podcast
 
   twenty_thousand_hertz:
     rss: http://feeds.megaphone.fm/20k
     set:
       podcast_name: "Twenty Thousand Hertz"
-      pcast_url: http://pca.st/20khz
+      pcast_url: https://pca.st/20khz
     template: podcast
 
   unsolved_murders:
     rss: http://feeds.soundcloud.com/users/soundcloud:users:224506341/sounds.rss
     set:
       podcast_name: "Unsolved Murders"
-      pcast_url: http://pca.st/unsolved
+      pcast_url: https://pca.st/unsolved
     template: podcast
 
   welcome_to_night_vale:
     rss: http://feeds.nightvalepresents.com/welcometonightvalepodcast
     set:
       podcast_name: "Welcome To Night Vale"
-      pcast_url: http://pca.st/nightvale
+      pcast_url: https://pca.st/nightvale
     template: podcast
 
   the_west_wing_weekly:
     rss: http://feeds.feedburner.com/westwingweekly
     set:
       podcast_name: "The West Wing Weekly"
-      pcast_url: http://pca.st/www
+      pcast_url: https://pca.st/www
     template: podcast
 
   what_trump_can_teach_us_about_con_law:
     rss: http://feeds.trumpconlaw.com/trumpconlaw
     set:
       podcast_name: "What Trump Can Teach Us About Con Law"
-      pcast_url: http://pca.st/nb5c
+      pcast_url: https://pca.st/nb5c
     template: podcast
 
   the_white_vault:
     rss: http://whitevault.libsyn.com/rss
     set:
       podcast_name: "The White Vault"
-      pcast_url: http://pca.st/6W9y
+      pcast_url: https://pca.st/6W9y
     template: podcast
 
   wired_uk:
     rss: http://www.wired.co.uk/rss/podcast/wired-podcast
     set:
       podcast_name: "Wired UK"
-      pcast_url: http://pca.st/wiredcouk
+      pcast_url: https://pca.st/wiredcouk
     template: podcast
 
   within_the_wires:
     rss: http://withinthewires.libsyn.com/rss
     set:
       podcast_name: "Within the Wires"
-      pcast_url: http://pca.st/withinwires
+      pcast_url: https://pca.st/withinwires
     template: podcast
 
   wonderful:
     rss: http://rosebuddies.libsyn.com/rss
     set:
       podcast_name: "Wonderful!"
-      pcast_url: http://pca.st/wonderful
+      pcast_url: https://pca.st/wonderful
     template: podcast
