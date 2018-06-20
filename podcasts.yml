@@ -61,6 +61,13 @@ tasks:
       pcast_url: https://pca.st/XDB4Pv
     template: podcast
 
+  arrested_devops:
+    rss: https://www.arresteddevops.com/episode/index.xml
+    set:
+      podcast_name: "Arrested DevOps"
+      pcast_url: https://pca.st/VqEP
+    template: podcast
+
   the_blindboy_podcast:
     rss: https://rss.acast.com/blindboy
     set:
