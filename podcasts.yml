@@ -194,6 +194,13 @@ tasks:
       pcast_url: https://pca.st/q8At
     template: podcast
 
+  kubernetes_podcast:
+    rss: https://kubernetespodcast.com/feeds/audio.xml
+    set:
+      podcast_name: "Kubernetes Podcast from Google"
+      pcast_url: https://pca.st/hssf
+    template: podcast
+
   lore:
     rss: http://lorepodcast.libsyn.com/rss
     set:
