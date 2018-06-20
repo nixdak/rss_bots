@@ -285,6 +285,13 @@ tasks:
       pcast_url: https://pca.st/robot
     template: podcast
 
+  rusty_spike:
+    rss: https://rusty-spike.blubrry.net/feed/podcast/
+    set:
+      podcast_name: "Rusty Spike"
+      pcast_url: https://pca.st/XOjU
+    template: podcast
+
   s_town:
     rss: http://feeds.stownpodcast.org/stownpodcast
     set:
