@@ -33,13 +33,6 @@ tasks:
       pcast_url: https://pca.st/adventurezone
     template: podcast
 
-  alice_isnt_dead:
-    rss: http://feeds.nightvalepresents.com/aliceisntdeadpodcast
-    set:
-      podcast_name: "Alice Isn't Dead"
-      pcast_url: https://pca.st/alice
-    template: podcast
-
   the_allusionist:
     rss: http://feeds.theallusionist.org/Allusionist
     set:
@@ -75,13 +68,6 @@ tasks:
       pcast_url: https://pca.st/tP9E
     template: podcast
 
-  the_boring_talks:
-    rss: https://podcasts.files.bbci.co.uk/p05t3gr2.rss
-    set:
-      podcast_name: "The Boring Talks"
-      pcast_url: https://pca.st/boringtalks
-    template: podcast
-
   the_bugle:
     rss: http://feeds.feedburner.com/thebuglefeed
     set:
@@ -110,25 +96,11 @@ tasks:
       pcast_url: https://pca.st/zeLn
     template: podcast
 
-  conspiracy_theories:
-    rss: https://rss.art19.com/conspiracy-theories
-    set:
-      podcast_name: "Conspiracy Theories"
-      pcast_url: https://pca.st/OSxO
-    template: podcast
-
   criminal:
     rss: http://feeds.thisiscriminal.com/CriminalShow
     set:
       podcast_name: "Criminal"
       pcast_url: https://pca.st/criminal
-    template: podcast
-
-  cults:
-    rss: https://rss.art19.com/cults
-    set:
-      podcast_name: "Cults"
-      pcast_url: https://pca.st/cv5o
     template: podcast
 
   the_curious_cases_of_ruterford_and_fry:
@@ -166,13 +138,6 @@ tasks:
       pcast_url: https://pca.st/8ICD
     template: podcast
 
-  haunted_places:
-    rss: https://rss.art19.com/haunted-places
-    set:
-      podcast_name: "Haunted Places"
-      pcast_url: https://pca.st/sZtA
-    template: podcast
-
   how_did_this_get_made:
     rss: http://rss.earwolf.com/how-did-this-get-made
     set:
@@ -185,13 +150,6 @@ tasks:
     set:
       podcast_name: "The Infinite Monkey Cage"
       pcast_url: https://pca.st/infinitemonkey
-    template: podcast
-
-  it_makes_a_sound:
-    rss: http://itmakesasound.libsyn.com/rss
-    set:
-      podcast_name: "It Makes A Sound"
-      pcast_url: https://pca.st/tC9h
     template: podcast
 
   king_falls_am:
@@ -285,13 +243,6 @@ tasks:
       pcast_url: https://pca.st/replyall
     template: podcast
 
-  request_for_commits:
-    rss: https://changelog.com/rfc/feed
-    set:
-      podcast_name: "Request For Commits"
-      pcast_url: https://pca.st/rfc
-    template: podcast
-
   robot_or_not:
     rss: http://feeds.theincomparable.com/robot
     set:
@@ -332,13 +283,6 @@ tasks:
     set:
       podcast_name: "Serial"
       pcast_url: https://pca.st/serial
-    template: podcast
-
-  serial_killers:
-    rss: http://feeds.soundcloud.com/users/soundcloud:users:287778748/sounds.rss
-    set:
-      podcast_name: "Serial Killers"
-      pcast_url: https://pca.st/lg6D
     template: podcast
 
   shmanners:
@@ -383,13 +327,6 @@ tasks:
       pcast_url: https://pca.st/sysk
     template: podcast
 
-  tales:
-    rss: https://rss.art19.com/tales
-    set:
-      podcast_name: "Tales"
-      pcast_url: https://pca.st/t86U
-    template: podcast
-
   techs_message:
     rss: http://rss.acast.com/techsmessage
     set:
@@ -425,13 +362,6 @@ tasks:
       pcast_url: https://pca.st/20khz
     template: podcast
 
-  unsolved_murders:
-    rss: http://feeds.soundcloud.com/users/soundcloud:users:224506341/sounds.rss
-    set:
-      podcast_name: "Unsolved Murders"
-      pcast_url: https://pca.st/unsolved
-    template: podcast
-
   welcome_to_night_vale:
     rss: http://feeds.nightvalepresents.com/welcometonightvalepodcast
     set:
@@ -453,30 +383,9 @@ tasks:
       pcast_url: https://pca.st/nb5c
     template: podcast
 
-  the_white_vault:
-    rss: http://whitevault.libsyn.com/rss
-    set:
-      podcast_name: "The White Vault"
-      pcast_url: https://pca.st/6W9y
-    template: podcast
-
   wired_uk:
     rss: http://www.wired.co.uk/rss/podcast/wired-podcast
     set:
       podcast_name: "Wired UK"
       pcast_url: https://pca.st/wiredcouk
-    template: podcast
-
-  within_the_wires:
-    rss: http://withinthewires.libsyn.com/rss
-    set:
-      podcast_name: "Within the Wires"
-      pcast_url: https://pca.st/withinwires
-    template: podcast
-
-  wonderful:
-    rss: http://rosebuddies.libsyn.com/rss
-    set:
-      podcast_name: "Wonderful!"
-      pcast_url: https://pca.st/wonderful
     template: podcast
