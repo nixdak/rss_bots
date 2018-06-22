@@ -19,6 +19,13 @@ tasks:
       pcast_url: https://pca.st/99invisible
     template: podcast
 
+  a_gay_and_a_nongay:
+    rss: https://feed.pippa.io/public/shows/gay
+    set:
+      podcast_name: "A Gay and A NonGay"
+      pcast_url: https://pca.st/bs2y
+    template: podcast
+
   a_very_fatal_murder:
     rss: http://feeds.megaphone.fm/veryfatalmurder
     set:
