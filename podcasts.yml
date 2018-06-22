@@ -145,6 +145,13 @@ tasks:
       pcast_url: https://pca.st/8ICD
     template: podcast
 
+  the_history_of_fun:
+    rss: http://feeds.feedburner.com/TheHistoryOfFun
+    set:
+      podcast_name: "The History of Fun"
+      pcast_url: https://pca.st/historyoffun
+    template: podcast
+
   how_did_this_get_made:
     rss: http://rss.earwolf.com/how-did-this-get-made
     set:
