@@ -152,6 +152,13 @@ tasks:
       pcast_url: https://pca.st/8ICD
     template: podcast
 
+  good_morning_night_vale:
+    rss: http://feeds.nightvalepresents.com/GoodMorningNightVale
+    set:
+      podcast_name: "Good Morning Night Vale"
+      pcast_url: https://pca.st/4y1y
+    template: podcast
+
   how_did_this_get_made:
     rss: http://rss.earwolf.com/how-did-this-get-made
     set:
