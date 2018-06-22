@@ -75,6 +75,13 @@ tasks:
       pcast_url: https://pca.st/tP9E
     template: podcast
 
+  bubble:
+    rss: http://maximumfun.org/feeds/bubble.xml
+    set:
+      podcast_name: "Bubble"
+      pcast_url: https://pca.st/25X8
+    template: podcast
+
   the_bugle:
     rss: http://feeds.feedburner.com/thebuglefeed
     set:
@@ -143,6 +150,13 @@ tasks:
     set:
       podcast_name: "Floss Weekly"
       pcast_url: https://pca.st/8ICD
+    template: podcast
+
+  good_morning_night_vale:
+    rss: http://feeds.nightvalepresents.com/GoodMorningNightVale
+    set:
+      podcast_name: "Good Morning Night Vale"
+      pcast_url: https://pca.st/4y1y
     template: podcast
 
   the_history_of_fun:
