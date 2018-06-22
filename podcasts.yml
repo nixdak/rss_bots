@@ -61,6 +61,13 @@ tasks:
       pcast_url: https://pca.st/VqEP
     template: podcast
 
+  beef_and_dairy_network:
+    rss: http://beefanddairynetwork.libsyn.com/rss
+    set:
+      podcast_name: "Beef and Dairy Network"
+      pcast_url: https://pca.st/beefdairy
+    template: podcast
+
   the_blindboy_podcast:
     rss: https://rss.acast.com/blindboy
     set:
