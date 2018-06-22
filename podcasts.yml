@@ -75,6 +75,13 @@ tasks:
       pcast_url: https://pca.st/tP9E
     template: podcast
 
+  bubble:
+    rss: http://maximumfun.org/feeds/bubble.xml
+    set:
+      podcast_name: "Bubble"
+      pcast_url: https://pca.st/25X8
+    template: podcast
+
   the_bugle:
     rss: http://feeds.feedburner.com/thebuglefeed
     set:
