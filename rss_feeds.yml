@@ -1,0 +1,370 @@
+---
+variables: secrets.yml
+
+templates:
+  rss_output:
+    accept_all: yes
+    notify:
+      entries:
+        title: "{{ title }}"
+        message: "{{ description }}"
+        via:
+          - email:
+              from: "{? from_email ?}"
+              to: "{? to_email ?}"
+              smtp_host: "{? smtp_host ?}"
+              smtp_port: 587
+              smtp_username: "{? username ?}"
+              smtp_password: "{? password ?}"
+              smtp_tls: yes
+              html: yes
+
+tasks:
+  9_to_5_mac:
+    rss: 
+      url: http://9to5mac.com/feed
+      all_entries: no
+    set:
+      title: "9 To 5 Mac | {{ title }}"
+    template:
+      - rss_output
+
+  angry_metal_guy:
+    rss:
+      url: http://www.angrymetalguy.com/feed
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      description: "{{ content }}"
+      title: "Angry Metal Guy | {{ title }}"
+    template:
+      - rss_output
+
+  ars_technica:
+    rss: 
+      url: http://feeds.arstechnica.com/arstechnica/index
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "Ars Technica | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
+
+  ask_a_manager:
+    rss:
+      url: https://www.askamanager.org/feed
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "Ask a Manager | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
+
+  big_bang_comics:
+    rss: 
+      url: https://us4.campaign-archive.com/feed?u=d3cdba03a39f21f4c48c243c1&id=2a427b131b
+      all_entries: no
+    set:
+      title: "Big Bang Comics | {{ title }}"
+    template:
+      - rss_output
+
+  binging_with_babish:
+    rss: 
+      url: https://www.youtube.com/feeds/videos.xml?channel_id=UCJHA_jMfCvEnv-3kRjTCQXw
+      all_entries: no
+    set:
+      title: "Binging With Babish | {{ title }}"
+      description: "{{ url }}"
+    template:
+      - rss_output
+
+  chief_o_brien_at_work:
+    rss: 
+      url: http://chiefobrienatwork.com/rss
+      all_entries: no
+    set:
+      title: "Chief O' Brien At Work | {{ title }}"
+      description: "{{ url }}"
+    template:
+      - rss_output
+
+  cyanide_and_happiness:
+    rss: 
+      url: http://feeds.feedburner.com/Explosm
+      all_entries: no
+    set:
+      title: "Cyanide and Happiness | {{ title }}"
+      description: "{{ url }}"
+    template:
+      - rss_output
+
+  dilbert:
+    rss: 
+      url: http://dilbert.com/feed
+      all_entries: no
+    set:
+      title: "Dilbert | {{ title }}"
+      description: "{{ url }}"
+    template:
+      - rss_output
+
+  dinosaur_comics:
+    rss: 
+      url: http://www.qwantz.com/rssfeed.php
+      all_entries: no
+    set:
+      title: "Dinosaur Comics! | {{ title }}"
+    template:
+      - rss_output
+
+  emacs_news:
+    rss: 
+      url: http://sachachua.com/blog/category/emacs/feed
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "Emacs News | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
+
+  emacs_subreddit:
+    rss:
+      url: https://www.reddit.com/r/emacs.rss
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "/r/emacs | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
+
+  games_subreddit:
+    rss:
+      url: https://www.reddit.com/r/games.rss
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "/r/games | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
+
+  garfield:
+    rss: 
+      url: https://www.comicsrss.com/rss/garfield.rss
+      all_entries: no
+    set:
+      title: "Garfield | {{ title }}"
+    template:
+      - rss_output
+
+  github:
+    rss: 
+      url: "{? github_private_feed ?}"
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "Github | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
+
+  gizmodo:
+    rss: 
+      url: https://gizmodo.com/rss
+      all_entries: no
+    set:
+      title: "Gizmodo | {{ title }}"
+    template:
+      - rss_output
+
+  mac_rumours:
+    rss: 
+      url: http://feeds.macrumors.com/MacRumors-All
+      all_entries: no
+    set:
+      title: "Mac Rumours | {{ title }}"
+    template:
+      - rss_output
+
+  metal_sucks:
+    rss: 
+      url: http://feeds.feedburner.com/Metalsucks
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "Metal Sucks | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
+
+  n_gate:
+    rss: 
+      url: http://n-gate.com/hackernews/index.rss
+      all_entries: no
+    set:
+      title: "N-Gate | {{ title }}"
+    template:
+      - rss_output
+
+  oglaf:
+    rss: 
+      url: https://oglaf.com/feeds/rss
+      all_entries: no
+    set:
+      title: "Oglaf | {{ title }}"
+    template:
+      - rss_output
+
+  orgmode_subreddit:
+    rss:
+      url: https://www.reddit.com/r/orgmode.rss
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "/r/orgmode | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
+
+  phd_comics:
+    rss: 
+      url: http://phdcomics.com/gradfeed.php
+      all_entries: no
+    set:
+      title: "PhD Comics | {{ title }}"
+    template:
+      - rss_output
+
+  playstation_access:
+    rss:
+      url: https://www.youtube.com/feeds/videos.xml?channel_id=UC6yzV_xgKn8r77FkcmZyMSg
+      all_entries: no
+    set:
+      title: "PlayStaion Access | {{ title }}"
+      description: "{{ url }}"
+    template:
+      - rss_output
+
+  questionable_content:
+    rss: 
+      url: https://questionablecontent.net/QCRSS.xml
+      all_entries: no
+    set:
+      title: "Questionable Content | {{ title }}"
+    template:
+      - rss_output
+
+  rte_news:
+    rss: 
+      url: https://www.rte.ie/news/rss/news-headlines.xml
+      link: [ link ]
+      all_entries: no
+    set:
+      title: "RTÉ News | {{ title }}"
+      description: "{{ description }} {{ url }}"
+    template:
+      - rss_output
+
+  selfhosted_subreddit:
+    rss:
+      url: https://www.reddit.com/r/selfhosted.rss
+      other_fields: [ content ]
+    set:
+      description: "{{ content }}"
+      title: "/r/orgmode | {{ title }}"
+    template:
+      - rss_output
+
+  smbc_comics:
+    rss: 
+      url: https://www.smbc-comics.com/comic/rss
+      all_entries: no
+    set:
+      title: "SMBC Comics | {{ title }}"
+    template:
+      - rss_output
+
+  spacemacs_subreddit:
+    rss:
+      url: https://www.reddit.com/r/spacemacs.rss
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "/r/spacemacs | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
+
+  techcrunch:
+    rss: 
+      url: http://feeds.feedburner.com/Techcrunch
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "Tech Chrunch | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
+
+  thearchers_subreddit:
+    rss:
+      url: https://www.reddit.com/r/thearchers.rss
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "/r/TheArchers | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
+
+  the_awkward_yeti:
+    rss: 
+      url: http://theawkwardyeti.com/feed
+      all_entries: no
+    set:
+      title: "The Awkward Yeti | {{ title }}"
+    template:
+      - rss_output
+
+  the_daily_wtf:
+    rss: 
+      url: http://syndication.thedailywtf.com/TheDailyWtf
+      all_entries: no
+    set:
+      title: "The Daily WTF"
+    template:
+      - rss_output
+
+  webcomic_name:
+    rss: 
+      url: http://webcomicname.com/rss
+      all_entries: no
+    set:
+      title: "Webcomic Name | {{ title }}"
+    template:
+      - rss_output
+
+  xkcd.com:
+    rss:
+      url: https://xkcd.com/rss.xml
+      all_entries: no
+    set:
+      title: "XKCD | {{ title }}"
+    template:
+      - rss_output
+
+  you_need_a_budget:
+    rss:
+      url: https://www.youneedabudget.com/feed
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "YNAB Title | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
