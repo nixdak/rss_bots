@@ -4,6 +4,10 @@ variables: secrets.yml
 templates:
   rss_output:
     accept_all: yes
+    age:
+      field: rss_pubdate
+      age: 7days
+      action: reject
     notify:
       entries:
         title: "{{ title }}"
@@ -182,6 +186,17 @@ tasks:
     template:
       - rss_output
 
+  hosted_graphite:
+    rss:
+      url: https://blog.hostedgraphite.com/feed/
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "Hosted Graphite | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
+
   mac_rumours:
     rss: 
       url: http://feeds.macrumors.com/MacRumors-All
@@ -190,6 +205,17 @@ tasks:
       title: "Mac Rumours | {{ title }}"
     template:
       - rss_output
+      
+  mac_stories:
+    rss:
+      url: http://feeds.feedburner.com/macsotriesnet
+      other_fields: [ content ]
+      all_entries: no
+     set:
+       title: "Mac Stories | {{ title }}"
+       description: "{{ content }}"
+     template:
+       - rss_output
 
   metal_sucks:
     rss: 
@@ -274,11 +300,21 @@ tasks:
     rss:
       url: https://www.reddit.com/r/selfhosted.rss
       other_fields: [ content ]
+      all_entries: no
     set:
       description: "{{ content }}"
       title: "/r/orgmode | {{ title }}"
     template:
       - rss_output
+
+  slack:
+    rss:
+      url: https://slackhq.com/feed
+      other_fields: [ content ]
+      all_entries: no
+    set:
+      title: "Slack | {{ title }}"
+      description: "{{ content }}"
 
   smbc_comics:
     rss: 
