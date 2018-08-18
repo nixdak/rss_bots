@@ -6,7 +6,7 @@ templates:
     accept_all: yes
     age:
       field: rss_pubdate
-      age: 7days
+      age: 7 days
       action: reject
     notify:
       entries:
