@@ -208,14 +208,14 @@ tasks:
       
   mac_stories:
     rss:
-      url: http://feeds.feedburner.com/macsotriesnet
+      url: http://feeds.feedburner.com/macstoriesnet
       other_fields: [ content ]
       all_entries: no
-     set:
-       title: "Mac Stories | {{ title }}"
-       description: "{{ content }}"
-     template:
-       - rss_output
+    set:
+      title: "Mac Stories | {{ title }}"
+      description: "{{ content }}"
+    template:
+      - rss_output
 
   metal_sucks:
     rss: 
