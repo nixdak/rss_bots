@@ -326,6 +326,8 @@ tasks:
     set:
       title: "Slack | {{ title }}"
       description: "{{ content }}"
+    template:
+      - rss_output
 
   smbc_comics:
     rss: 
