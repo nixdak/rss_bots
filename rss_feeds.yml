@@ -186,17 +186,6 @@ tasks:
     template:
       - rss_output
       
-  hacker_news:
-    rss:
-      url: https://news.ycombinator.com/rss
-      other_fields: [ comments ]
-      all_entries: no
-    set:
-      title: "Hacker News | {{ title }}"
-      description: "Link: {{ url }}<br />Comments: {{ comments }}"
-    template:
-      - rss_output
-    
   hosted_graphite:
     rss:
       url: https://blog.hostedgraphite.com/feed/
