@@ -19,12 +19,6 @@ templates:
               smtp_tls: yes
               html: yes
 
-  age_filter:
-    age:
-      field: rss_pubdate
-      age: 7 days
-      action: reject
-
 tasks:
   9_to_5_mac:
     rss:
@@ -33,7 +27,6 @@ tasks:
     set:
       title: "9 To 5 Mac | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   angry_metal_guy:
@@ -45,7 +38,6 @@ tasks:
       description: "{{ content }}"
       title: "Angry Metal Guy | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   ars_technica:
@@ -57,7 +49,6 @@ tasks:
       title: "Ars Technica | {{ title }}"
       description: "{{ content }}"
     template:
-      - age_filter
       - rss_output
 
   ask_a_manager:
@@ -69,7 +60,6 @@ tasks:
       title: "Ask a Manager | {{ title }}"
       description: "{{ content }}"
     template:
-      - age_filter
       - rss_output
 
   big_bang_comics:
@@ -79,7 +69,6 @@ tasks:
     set:
       title: "Big Bang Comics | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   binging_with_babish:
@@ -90,7 +79,6 @@ tasks:
       title: "Binging With Babish | {{ title }}"
       description: "{{ url }}"
     template:
-      - age_filter
       - rss_output
 
   chief_o_brien_at_work:
@@ -101,7 +89,6 @@ tasks:
       title: "Chief O' Brien At Work | {{ title }}"
       description: "{{ url }}"
     template:
-      - age_filter
       - rss_output
 
   cyanide_and_happiness:
@@ -112,7 +99,6 @@ tasks:
       title: "Cyanide and Happiness | {{ title }}"
       description: "{{ url }}"
     template:
-      - age_filter
       - rss_output
 
   dilbert:
@@ -123,7 +109,6 @@ tasks:
       title: "Dilbert | {{ title }}"
       description: "{{ url }}"
     template:
-      - age_filter
       - rss_output
 
   dinosaur_comics:
@@ -133,7 +118,6 @@ tasks:
     set:
       title: "Dinosaur Comics! | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   emacs_news:
@@ -145,7 +129,6 @@ tasks:
       title: "Emacs News | {{ title }}"
       description: "{{ content }}"
     template:
-      - age_filter
       - rss_output
 
   emacs_subreddit:
@@ -177,7 +160,6 @@ tasks:
     set:
       title: "Garfield | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   github:
@@ -189,7 +171,6 @@ tasks:
       title: "Github | {{ title }}"
       description: "{{ content }}"
     template:
-      - age_filter
       - rss_output
 
   gizmodo:
@@ -199,7 +180,6 @@ tasks:
     set:
       title: "Gizmodo | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   hosted_graphite:
@@ -211,7 +191,6 @@ tasks:
       title: "Hosted Graphite | {{ title }}"
       description: "{{ content }}"
     template:
-      - age_filter
       - rss_output
 
   mac_rumours:
@@ -221,7 +200,6 @@ tasks:
     set:
       title: "Mac Rumours | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   mac_stories:
@@ -233,7 +211,6 @@ tasks:
       title: "Mac Stories | {{ title }}"
       description: "{{ content }}"
     template:
-      - age_filter
       - rss_output
 
   metal_sucks:
@@ -245,7 +222,6 @@ tasks:
       title: "Metal Sucks | {{ title }}"
       description: "{{ content }}"
     template:
-      - age_filter
       - rss_output
 
   n_gate:
@@ -255,7 +231,6 @@ tasks:
     set:
       title: "N-Gate | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   oglaf:
@@ -265,7 +240,6 @@ tasks:
     set:
       title: "Oglaf | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   orgmode_subreddit:
@@ -286,7 +260,6 @@ tasks:
     set:
       title: "PhD Comics | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   playstation_access:
@@ -297,7 +270,6 @@ tasks:
       title: "PlayStaion Access | {{ title }}"
       description: "{{ url }}"
     template:
-      - age_filter
       - rss_output
 
   questionable_content:
@@ -307,7 +279,6 @@ tasks:
     set:
       title: "Questionable Content | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   rte_news:
@@ -319,7 +290,6 @@ tasks:
       title: "RTÉ News | {{ title }}"
       description: "{{ description }} {{ url }}"
     template:
-      - age_filter
       - rss_output
 
   selfhosted_subreddit:
@@ -342,7 +312,6 @@ tasks:
       title: "Slack | {{ title }}"
       description: "{{ content }}"
     template:
-      - age_filter
       - rss_output
 
   smbc_comics:
@@ -352,7 +321,6 @@ tasks:
     set:
       title: "SMBC Comics | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   spacemacs_subreddit:
@@ -375,7 +343,6 @@ tasks:
       title: "Tech Chrunch | {{ title }}"
       description: "{{ content }}"
     template:
-      - age_filter
       - rss_output
 
   thearchers_subreddit:
@@ -396,7 +363,6 @@ tasks:
     set:
       title: "The Awkward Yeti | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   the_daily_wtf:
@@ -406,7 +372,6 @@ tasks:
     set:
       title: "The Daily WTF"
     template:
-      - age_filter
       - rss_output
 
   webcomic_name:
@@ -416,7 +381,6 @@ tasks:
     set:
       title: "Webcomic Name | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   xkcd.com:
@@ -426,7 +390,6 @@ tasks:
     set:
       title: "XKCD | {{ title }}"
     template:
-      - age_filter
       - rss_output
 
   you_need_a_budget:
@@ -438,5 +401,4 @@ tasks:
       title: "YNAB Title | {{ title }}"
       description: "{{ content }}"
     template:
-      - age_filter
       - rss_output
