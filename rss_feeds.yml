@@ -4,10 +4,6 @@ variables: secrets.yml
 templates:
   rss_output:
     accept_all: yes
-    age:
-      field: rss_pubdate
-      age: 7 days
-      action: reject
     notify:
       entries:
         title: "{{ title }}"
@@ -23,14 +19,21 @@ templates:
               smtp_tls: yes
               html: yes
 
+  age_filter:
+    age:
+      field: rss_pubdate
+      age: 7 days
+      action: reject
+
 tasks:
   9_to_5_mac:
-    rss: 
+    rss:
       url: http://9to5mac.com/feed
       all_entries: no
     set:
       title: "9 To 5 Mac | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   angry_metal_guy:
@@ -42,10 +45,11 @@ tasks:
       description: "{{ content }}"
       title: "Angry Metal Guy | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   ars_technica:
-    rss: 
+    rss:
       url: http://feeds.arstechnica.com/arstechnica/index
       other_fields: [ content ]
       all_entries: no
@@ -53,6 +57,7 @@ tasks:
       title: "Ars Technica | {{ title }}"
       description: "{{ content }}"
     template:
+      - age_filter
       - rss_output
 
   ask_a_manager:
@@ -64,68 +69,75 @@ tasks:
       title: "Ask a Manager | {{ title }}"
       description: "{{ content }}"
     template:
+      - age_filter
       - rss_output
 
   big_bang_comics:
-    rss: 
+    rss:
       url: https://us4.campaign-archive.com/feed?u=d3cdba03a39f21f4c48c243c1&id=2a427b131b
       all_entries: no
     set:
       title: "Big Bang Comics | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   binging_with_babish:
-    rss: 
+    rss:
       url: https://www.youtube.com/feeds/videos.xml?channel_id=UCJHA_jMfCvEnv-3kRjTCQXw
       all_entries: no
     set:
       title: "Binging With Babish | {{ title }}"
       description: "{{ url }}"
     template:
+      - age_filter
       - rss_output
 
   chief_o_brien_at_work:
-    rss: 
+    rss:
       url: http://chiefobrienatwork.com/rss
       all_entries: no
     set:
       title: "Chief O' Brien At Work | {{ title }}"
       description: "{{ url }}"
     template:
+      - age_filter
       - rss_output
 
   cyanide_and_happiness:
-    rss: 
+    rss:
       url: http://feeds.feedburner.com/Explosm
       all_entries: no
     set:
       title: "Cyanide and Happiness | {{ title }}"
       description: "{{ url }}"
     template:
+      - age_filter
       - rss_output
 
   dilbert:
-    rss: 
+    rss:
       url: http://dilbert.com/feed
       all_entries: no
     set:
       title: "Dilbert | {{ title }}"
       description: "{{ url }}"
     template:
+      - age_filter
       - rss_output
 
   dinosaur_comics:
-    rss: 
+    rss:
       url: http://www.qwantz.com/rssfeed.php
       all_entries: no
     set:
       title: "Dinosaur Comics! | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   emacs_news:
-    rss: 
+    rss:
       url: http://sachachua.com/blog/category/emacs/feed
       other_fields: [ content ]
       all_entries: no
@@ -133,6 +145,7 @@ tasks:
       title: "Emacs News | {{ title }}"
       description: "{{ content }}"
     template:
+      - age_filter
       - rss_output
 
   emacs_subreddit:
@@ -158,16 +171,17 @@ tasks:
       - rss_output
 
   garfield:
-    rss: 
+    rss:
       url: https://www.comicsrss.com/rss/garfield.rss
       all_entries: no
     set:
       title: "Garfield | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   github:
-    rss: 
+    rss:
       url: "{? github_private_feed ?}"
       other_fields: [ content ]
       all_entries: no
@@ -175,17 +189,19 @@ tasks:
       title: "Github | {{ title }}"
       description: "{{ content }}"
     template:
+      - age_filter
       - rss_output
 
   gizmodo:
-    rss: 
+    rss:
       url: https://gizmodo.com/rss
       all_entries: no
     set:
       title: "Gizmodo | {{ title }}"
     template:
+      - age_filter
       - rss_output
-      
+
   hosted_graphite:
     rss:
       url: https://blog.hostedgraphite.com/feed/
@@ -195,17 +211,19 @@ tasks:
       title: "Hosted Graphite | {{ title }}"
       description: "{{ content }}"
     template:
+      - age_filter
       - rss_output
 
   mac_rumours:
-    rss: 
+    rss:
       url: http://feeds.macrumors.com/MacRumors-All
       all_entries: no
     set:
       title: "Mac Rumours | {{ title }}"
     template:
+      - age_filter
       - rss_output
-      
+
   mac_stories:
     rss:
       url: http://feeds.feedburner.com/macstoriesnet
@@ -215,10 +233,11 @@ tasks:
       title: "Mac Stories | {{ title }}"
       description: "{{ content }}"
     template:
+      - age_filter
       - rss_output
 
   metal_sucks:
-    rss: 
+    rss:
       url: http://feeds.feedburner.com/Metalsucks
       other_fields: [ content ]
       all_entries: no
@@ -226,24 +245,27 @@ tasks:
       title: "Metal Sucks | {{ title }}"
       description: "{{ content }}"
     template:
+      - age_filter
       - rss_output
 
   n_gate:
-    rss: 
+    rss:
       url: http://n-gate.com/hackernews/index.rss
       all_entries: no
     set:
       title: "N-Gate | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   oglaf:
-    rss: 
+    rss:
       url: https://oglaf.com/feeds/rss
       all_entries: no
     set:
       title: "Oglaf | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   orgmode_subreddit:
@@ -258,12 +280,13 @@ tasks:
       - rss_output
 
   phd_comics:
-    rss: 
+    rss:
       url: http://phdcomics.com/gradfeed.php
       all_entries: no
     set:
       title: "PhD Comics | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   playstation_access:
@@ -274,19 +297,21 @@ tasks:
       title: "PlayStaion Access | {{ title }}"
       description: "{{ url }}"
     template:
+      - age_filter
       - rss_output
 
   questionable_content:
-    rss: 
+    rss:
       url: https://questionablecontent.net/QCRSS.xml
       all_entries: no
     set:
       title: "Questionable Content | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   rte_news:
-    rss: 
+    rss:
       url: https://www.rte.ie/news/rss/news-headlines.xml
       link: [ link ]
       all_entries: no
@@ -294,6 +319,7 @@ tasks:
       title: "RTÉ News | {{ title }}"
       description: "{{ description }} {{ url }}"
     template:
+      - age_filter
       - rss_output
 
   selfhosted_subreddit:
@@ -316,15 +342,17 @@ tasks:
       title: "Slack | {{ title }}"
       description: "{{ content }}"
     template:
+      - age_filter
       - rss_output
 
   smbc_comics:
-    rss: 
+    rss:
       url: https://www.smbc-comics.com/comic/rss
       all_entries: no
     set:
       title: "SMBC Comics | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   spacemacs_subreddit:
@@ -339,7 +367,7 @@ tasks:
       - rss_output
 
   techcrunch:
-    rss: 
+    rss:
       url: http://feeds.feedburner.com/Techcrunch
       other_fields: [ content ]
       all_entries: no
@@ -347,6 +375,7 @@ tasks:
       title: "Tech Chrunch | {{ title }}"
       description: "{{ content }}"
     template:
+      - age_filter
       - rss_output
 
   thearchers_subreddit:
@@ -361,30 +390,33 @@ tasks:
       - rss_output
 
   the_awkward_yeti:
-    rss: 
+    rss:
       url: http://theawkwardyeti.com/feed
       all_entries: no
     set:
       title: "The Awkward Yeti | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   the_daily_wtf:
-    rss: 
+    rss:
       url: http://syndication.thedailywtf.com/TheDailyWtf
       all_entries: no
     set:
       title: "The Daily WTF"
     template:
+      - age_filter
       - rss_output
 
   webcomic_name:
-    rss: 
+    rss:
       url: http://webcomicname.com/rss
       all_entries: no
     set:
       title: "Webcomic Name | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   xkcd.com:
@@ -394,6 +426,7 @@ tasks:
     set:
       title: "XKCD | {{ title }}"
     template:
+      - age_filter
       - rss_output
 
   you_need_a_budget:
@@ -405,4 +438,5 @@ tasks:
       title: "YNAB Title | {{ title }}"
       description: "{{ content }}"
     template:
+      - age_filter
       - rss_output
