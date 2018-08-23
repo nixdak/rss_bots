@@ -193,12 +193,12 @@ tasks:
     template:
       - rss_output
 
-  mac_rumours:
+  mac_rumors:
     rss:
       url: http://feeds.macrumors.com/MacRumors-All
       all_entries: no
     set:
-      title: "Mac Rumours | {{ title }}"
+      title: "Mac Rumors | {{ title }}"
     template:
       - rss_output
 
