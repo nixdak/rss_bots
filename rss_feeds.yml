@@ -267,7 +267,7 @@ tasks:
       url: https://www.youtube.com/feeds/videos.xml?channel_id=UC6yzV_xgKn8r77FkcmZyMSg
       all_entries: no
     set:
-      title: "PlayStaion Access | {{ title }}"
+      title: "PlayStation Access | {{ title }}"
       description: "{{ url }}"
     template:
       - rss_output
@@ -398,7 +398,7 @@ tasks:
       other_fields: [ content ]
       all_entries: no
     set:
-      title: "YNAB Title | {{ title }}"
+      title: "YNAB Blog | {{ title }}"
       description: "{{ content }}"
     template:
       - rss_output
