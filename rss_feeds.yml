@@ -340,7 +340,7 @@ tasks:
       other_fields: [ content ]
       all_entries: no
     set:
-      title: "Tech Chrunch | {{ title }}"
+      title: "Tech Crunch | {{ title }}"
       description: "{{ content }}"
     template:
       - rss_output
