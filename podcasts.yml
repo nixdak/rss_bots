@@ -109,6 +109,13 @@ tasks:
       podcast_name: "Coding Blocks"
       pcast_url: https://pca.st/codingblocks
     template: podcast
+    
+  coffee_with_april:
+    rss: http://feeds.soundcloud.com/users/soundcloud:users:421377004/sounds.rss
+    set:
+      podcast_name: "Coffee With April"
+      pcast_url: https://pca.st/iK9n
+    template: podcast
 
   command_line_heroes:
     rss: https://feeds.pacific-content.com/commandlineheroes
@@ -262,6 +269,13 @@ tasks:
     set:
       podcast_name: "No Such Thing As A Fish"
       pcast_url: https://pca.st/nosuchthing
+    template: podcast
+    
+  o11ycast:
+    rss: https://www.heavybit.com/category/library/podcasts/o11ycast/feed/
+    set:
+      podcast_name: "O11ycast"
+      pcast_url: https://pca.st/U2rA
     template: podcast
 
   playing_for_fun:
