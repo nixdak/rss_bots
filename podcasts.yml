@@ -179,6 +179,13 @@ tasks:
       podcast_name: "Good Morning Night Vale"
       pcast_url: https://pca.st/4y1y
     template: podcast
+    
+  han_and_matt_know_it_all:
+    rss: http://hannahandmattknowitall.libsyn.com/rss
+    set:
+      podcast_name: "Han and Matt Know It All"
+      pcast_url: https://pca.st/U8sX
+    template: podcast
 
   the_history_of_fun:
     rss: http://feeds.feedburner.com/TheHistoryOfFun
