@@ -313,6 +313,13 @@ tasks:
       pcast_url: https://pca.st/playingforfun
     template: podcast
 
+  rebel_force_radio:
+    rss: http://rebelforceradio.libsyn.com/rss
+    set:
+      podcast_name: "Rebel Force Radio"
+      pcast_url: https://pca.st/yB4y
+    template: podcast
+
   reply_all:
     rss: http://feeds.gimletmedia.com/hearreplyall
     set:
