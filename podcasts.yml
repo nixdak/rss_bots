@@ -172,7 +172,14 @@ tasks:
       podcast_name: "Floss Weekly"
       pcast_url: https://pca.st/8ICD
     template: podcast
-
+    
+  full_of_sith:
+    rss: http://www.thamike.com/fullofsith/fosxml.xml
+    set:
+      podcast_name: "Full of Sith"
+      pcast_url: https://pca.st/OUEBMo
+    template: podcast
+    
   good_morning_night_vale:
     rss: http://feeds.nightvalepresents.com/GoodMorningNightVale
     set:
