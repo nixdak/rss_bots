@@ -278,6 +278,13 @@ tasks:
       pcast_url: https://pca.st/U2rA
     template: podcast
 
+  on_call_nightmares:
+    rss: https://oncallnightmares.podomatic.com/rss2.xml
+    set:
+      podcast_name: "On-Call Nightmares"
+      pcast_url: https://pca.st/3O9V
+    template: podcast
+
   playing_for_fun:
     rss: https://www.relay.fm/playingforfun/feed
     set:
