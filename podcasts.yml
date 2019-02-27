@@ -67,6 +67,13 @@ tasks:
       podcast_name: "Arrested DevOps"
       pcast_url: https://pca.st/VqEP
     template: podcast
+    
+  ask_a_manager:
+    rss: https://feeds.megaphone.fm/HSW2108393204
+    set:
+      podcast_name: "Ask A Manager"
+      pcast_url: https://pca.st/yB4y
+    template: podcast
 
   beef_and_dairy_network:
     rss: http://beefanddairynetwork.libsyn.com/rss
