@@ -242,6 +242,13 @@ tasks:
       podcast_name: "The Memory Palace"
       pcast_url: https://pca.st/memorypalace
     template: podcast
+    
+  the_met_eireann_podcast:
+    rss: https://audioboom.com/channels/4997901.rss
+    set:
+      podcast_name: "The Met Éireann Podcast"
+      pcast_url: https://pca.st/75C9
+    template: podcast
 
   mission_to_zyxx:
     rss: https://audioboom.com/channels/4921284.rss
