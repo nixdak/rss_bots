@@ -235,6 +235,13 @@ tasks:
       podcast_name: "Lore"
       pcast_url: https://pca.st/lore
     template: podcast
+    
+  the_magnus_archives:
+    rss: http://rss.acast.com/themagnusarchives
+    set:
+      podcast_name: "The Magnus Archives"
+      pcast_url: https://pca.st/8FP2
+    template: podcast
 
   the_memory_palace:
     rss: http://feeds.thememorypalace.us/thememorypalace
